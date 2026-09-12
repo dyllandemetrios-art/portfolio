@@ -63,9 +63,15 @@ img { max-width: 100%; display: block; }
 .site-header .wrap {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 12px;
+}
+
+.site-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .site-title {
@@ -77,6 +83,12 @@ img { max-width: 100%; display: block; }
 }
 
 .site-title a { color: var(--bone); }
+
+.site-role {
+  font-size: 0.78rem;
+  color: var(--bone-dim);
+  letter-spacing: 0.02em;
+}
 
 .site-nav {
   display: flex;

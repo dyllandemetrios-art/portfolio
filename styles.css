@@ -276,11 +276,20 @@ img { max-width: 100%; display: block; }
   width: fit-content;
 }
 
+.entry-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.entry-links .entry-link { margin: 0; }
+
 .entry--game { --accent: var(--ember); }
 .entry--novel-chrones { --accent: var(--brass); }
 .entry--novel-anandavira { --accent: var(--violet); }
 .entry--poetry { --accent: var(--ember); }
 .entry--boardgame { --accent: var(--brass); }
+.entry--concept { --accent: var(--brass); }
 
 /* ---------- moodboard ---------- */
 

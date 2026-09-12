@@ -309,6 +309,7 @@ img { max-width: 100%; display: block; }
 
 .board-group--anandavira { --accent: var(--violet); }
 .board-group--francia { --accent: var(--ember); }
+.board-group--immarcescible { --accent: var(--brass); }
 
 .board-block {
   margin-bottom: 30px;

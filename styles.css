@@ -356,26 +356,11 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 
-.contact-section .kicker {
-  font-size: 0.85rem;
-  color: var(--bone-dim);
-  margin: 0 0 10px;
-}
-
 .contact-section h2 {
   font-family: var(--serif);
   font-weight: 500;
   font-size: clamp(1.8rem, 4vw, 2.4rem);
   margin: 0 0 14px;
-}
-
-.contact-section h2::before {
-  content: "";
-  display: block;
-  width: 48px;
-  height: 2px;
-  background: var(--brass);
-  margin: 0 auto 22px;
 }
 
 .contact-section .lead {

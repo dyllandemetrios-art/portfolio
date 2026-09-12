@@ -1,0 +1,316 @@
+/* =========================================================
+   Dyllan Démétrios — portfolio
+   Tokens : encre #12100E · os #E8E1D3 · laiton #A9863F
+            violet #5B4B8A · braise #B4502E · pierre #3A362F
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500&display=swap');
+
+:root {
+  --ink: #12100E;
+  --ink-raised: #181512;
+  --bone: #E8E1D3;
+  --bone-dim: #ACA595;
+  --brass: #A9863F;
+  --violet: #5B4B8A;
+  --ember: #B4502E;
+  --stone: #3A362F;
+
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--bone);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+img { max-width: 100%; display: block; }
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ---------- header / nav ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--stone);
+  padding: 22px 0;
+}
+
+.site-header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.site-title {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.site-title a { color: var(--bone); }
+
+.site-nav {
+  display: flex;
+  gap: 22px;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  color: var(--bone-dim);
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--bone);
+  border-bottom-color: var(--brass);
+}
+
+/* ---------- hero ---------- */
+
+.hero {
+  padding: 88px 0 72px;
+  border-bottom: 1px solid var(--stone);
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 2.9rem);
+  line-height: 1.25;
+  max-width: 14ch;
+  margin: 0 0 22px;
+}
+
+.hero p {
+  max-width: 52ch;
+  color: var(--bone-dim);
+  font-size: 1.05rem;
+}
+
+/* ---------- pillar list (home) ---------- */
+
+.pillars {
+  list-style: none;
+  margin: 48px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--stone);
+}
+
+.pillars li {
+  border-bottom: 1px solid var(--stone);
+}
+
+.pillars a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 0;
+}
+
+.pillars a:hover .pillar-name { color: var(--bone); }
+.pillars a:hover .pillar-go { transform: translateX(4px); }
+
+.pillar-index {
+  font-family: var(--serif);
+  font-size: 0.9rem;
+  color: var(--bone-dim);
+  width: 2.5em;
+  flex-shrink: 0;
+}
+
+.pillar-body { flex: 1; }
+
+.pillar-name {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--bone-dim);
+  transition: color 0.15s ease;
+  display: block;
+}
+
+.pillar-desc {
+  color: var(--bone-dim);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+.pillar-go {
+  color: var(--bone-dim);
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.pillars li:nth-child(1) .pillar-name { border-left: 2px solid var(--ember); padding-left: 14px; }
+.pillars li:nth-child(2) .pillar-name { border-left: 2px solid var(--brass); padding-left: 14px; }
+.pillars li:nth-child(3) .pillar-name { border-left: 2px solid var(--violet); padding-left: 14px; }
+
+/* ---------- page header (sub-pages) ---------- */
+
+.page-head {
+  padding: 56px 0 40px;
+  border-bottom: 1px solid var(--stone);
+}
+
+.page-head .kicker {
+  font-size: 0.85rem;
+  color: var(--bone-dim);
+  margin-bottom: 10px;
+}
+
+.page-head h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin: 0;
+}
+
+.page-head p {
+  color: var(--bone-dim);
+  max-width: 58ch;
+  margin-top: 14px;
+}
+
+/* ---------- work entries (games / novels) ---------- */
+
+.entries {
+  padding: 8px 0 80px;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--stone);
+}
+
+.entry:first-of-type { padding-top: 0; }
+
+.entry-accent {
+  font-size: 0.8rem;
+  color: var(--accent, var(--brass));
+  text-transform: none;
+}
+
+.entry h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.55rem;
+  margin: 0;
+}
+
+.entry p {
+  color: var(--bone-dim);
+  max-width: 62ch;
+  margin: 0;
+}
+
+.entry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.tag {
+  font-size: 0.78rem;
+  color: var(--bone-dim);
+  border: 1px solid var(--stone);
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.entry-link {
+  color: var(--accent, var(--brass));
+  font-size: 0.95rem;
+  border-bottom: 1px solid currentColor;
+  width: fit-content;
+}
+
+.entry--game { --accent: var(--ember); }
+.entry--novel-chrones { --accent: var(--brass); }
+.entry--novel-anandavira { --accent: var(--violet); }
+
+/* ---------- moodboard ---------- */
+
+.moodboard-embed {
+  padding: 8px 0 40px;
+  min-height: 320px;
+}
+
+.moodboard-note {
+  border: 1px dashed var(--stone);
+  padding: 22px 24px;
+  color: var(--bone-dim);
+  font-size: 0.92rem;
+  margin: 0 0 40px;
+}
+
+.moodboard-note code {
+  color: var(--bone);
+  background: var(--ink-raised);
+  padding: 1px 6px;
+  border-radius: 2px;
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--stone);
+  padding: 28px 0 60px;
+  color: var(--bone-dim);
+  font-size: 0.88rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  justify-content: space-between;
+}
+
+.site-footer a {
+  border-bottom: 1px solid transparent;
+}
+
+.site-footer a:hover {
+  color: var(--bone);
+  border-bottom-color: var(--brass);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+
+@media (max-width: 560px) {
+  .site-header .wrap { flex-direction: column; align-items: flex-start; }
+  .pillars a { flex-direction: column; gap: 6px; }
+}

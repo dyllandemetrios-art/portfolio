@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moodboard — Dyllan Démétrios</title>
+<meta name="description" content="Références visuelles, synchronisées automatiquement depuis un board Pinterest.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="site-title"><a href="index.html">Dyllan Démétrios</a></p>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="games.html">Jeux</a>
+      <a href="novels.html">Romans</a>
+      <a href="moodboard.html" aria-current="page">Moodboard</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="kicker">03 · Moodboard</p>
+    <h1>Références visuelles</h1>
+    <p>Ce board se met à jour tout seul : ajoute une épingle sur Pinterest, elle apparaît ici sans toucher au code.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <!--
+    ÉTAPE À FAIRE : remplace l'URL ci-dessous par celle de ton board Pinterest,
+    au format https://www.pinterest.com/TON_PSEUDO/NOM_DU_BOARD/
+    Le widget est officiel (fourni par Pinterest) : rien d'autre à coder,
+    il se synchronise automatiquement à chaque épingle ajoutée.
+  -->
+  <div class="moodboard-embed">
+    <a data-pin-do="embedBoard"
+       data-pin-board-width="900"
+       data-pin-scale-height="400"
+       data-pin-scale-width="80"
+       href="https://www.pinterest.com/TON_PSEUDO/TON_BOARD/">
+    </a>
+  </div>
+
+  <p class="moodboard-note">
+    Remplace <code>TON_PSEUDO</code> et <code>TON_BOARD</code> ci-dessus (dans le fichier <code>moodboard.html</code>) par l'URL réelle de ton board Pinterest. Le script <code>pinit.js</code> juste avant <code>&lt;/body&gt;</code> se charge de tout le reste.
+  </p>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap" style="display:flex; flex-wrap:wrap; gap:10px 24px; justify-content:space-between; width:100%;">
+    <span>Dyllan Démétrios · Bordeaux</span>
+    <a href="https://demetrios-games.itch.io" target="_blank" rel="noopener">itch.io</a>
+  </div>
+</footer>
+
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+</body>
+</html>

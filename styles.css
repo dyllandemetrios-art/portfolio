@@ -111,6 +111,59 @@ img { max-width: 100%; display: block; }
   border-bottom-color: var(--brass);
 }
 
+.nav-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav-caret {
+  background: none;
+  border: none;
+  padding: 4px;
+  margin: 0;
+  color: var(--bone-dim);
+  font-size: 0.65rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.nav-caret:hover { color: var(--bone); }
+
+.nav-item.is-open .nav-caret {
+  color: var(--brass);
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-panel {
+  display: none;
+  border-bottom: 1px solid var(--stone);
+  background: var(--ink-raised);
+}
+
+.nav-dropdown-panel.is-open { display: block; }
+
+.nav-dropdown-panel .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.nav-dropdown-panel a {
+  color: var(--bone-dim);
+  font-size: 0.92rem;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav-dropdown-panel a:hover {
+  color: var(--bone);
+  border-bottom-color: var(--brass);
+}
+
 /* ---------- hero ---------- */
 
 .hero {
@@ -290,6 +343,167 @@ img { max-width: 100%; display: block; }
 .entry--poetry { --accent: var(--ember); }
 .entry--boardgame { --accent: var(--brass); }
 .entry--concept { --accent: var(--brass); }
+
+/* ---------- project grid (hover cards) ---------- */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px 24px;
+  align-items: start;
+  padding-top: 8px;
+  padding-bottom: 80px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 2px;
+  border: 1px solid var(--stone);
+}
+
+.project-card-media {
+  position: absolute;
+  inset: 0;
+  background-image: var(--card-image, none), linear-gradient(155deg, var(--stone), var(--ink-raised));
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-card-media,
+.project-card:focus-visible .project-card-media {
+  transform: scale(1.05);
+}
+
+.project-card-label {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 16px 18px;
+  background: linear-gradient(to top, rgba(18, 16, 14, 0.92), transparent);
+}
+
+.project-card-label .project-card-kicker {
+  font-size: 0.75rem;
+  color: var(--accent, var(--brass));
+  margin: 0 0 4px;
+}
+
+.project-card-label h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--bone);
+  margin: 0;
+}
+
+.project-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  background: rgba(18, 16, 14, 0.82);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.project-card:hover .project-card-overlay,
+.project-card:focus-visible .project-card-overlay {
+  opacity: 1;
+}
+
+.project-card-overlay .project-card-kicker {
+  font-size: 0.75rem;
+  color: var(--accent, var(--brass));
+  margin: 0 0 4px;
+}
+
+.project-card-overlay h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--bone);
+  margin: 0 0 8px;
+}
+
+.project-card-overlay p.project-card-desc {
+  color: var(--bone-dim);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin: 0 0 12px;
+}
+
+.project-card-overlay .entry-meta { margin-top: 0; }
+
+.project-card--game { --accent: var(--ember); }
+.project-card--boardgame { --accent: var(--brass); }
+.project-card--novel-chrones { --accent: var(--brass); }
+.project-card--novel-anandavira { --accent: var(--violet); }
+.project-card--poetry { --accent: var(--ember); }
+
+.project-secondary-link {
+  color: var(--bone-dim);
+  font-size: 0.88rem;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.project-secondary-link:hover {
+  color: var(--bone);
+  border-bottom-color: var(--brass);
+}
+
+@media (max-width: 700px) {
+  .project-card-overlay { opacity: 1; }
+}
+
+/* ---------- back link (dedicated project pages) ---------- */
+
+.back-link-wrap {
+  padding: 24px 0 0;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--bone-dim);
+  font-size: 0.9rem;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.back-link:hover {
+  color: var(--bone);
+  border-bottom-color: var(--brass);
+}
+
+/* ---------- button ---------- */
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid var(--brass);
+  color: var(--brass);
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--brass);
+  color: var(--ink);
+}
 
 /* ---------- moodboard ---------- */
 

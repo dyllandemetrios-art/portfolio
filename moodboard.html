@@ -18,12 +18,42 @@
     <nav class="site-nav">
       <a href="index.html">Accueil</a>
       <a href="games.html">Jeux vidéo</a>
-      <a href="boardgames.html">Jeux de société</a>
-      <a href="novels.html">Romans</a>
-      <a href="moodboard.html" aria-current="page">Moodboard</a>
+      <span class="nav-item">
+        <a href="boardgames.html">Jeux de société</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-boardgames" aria-label="Sous-menu Jeux de société">▾</button>
+      </span>
+      <span class="nav-item">
+        <a href="novels.html">Romans</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-novels" aria-label="Sous-menu Romans">▾</button>
+      </span>
+      <span class="nav-item">
+        <a href="moodboard.html" aria-current="page">Moodboard</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-moodboard" aria-label="Sous-menu Moodboard">▾</button>
+      </span>
+      <a href="apropos.html">À propos</a>
     </nav>
   </div>
 </header>
+
+<div class="nav-dropdown-panel" id="dd-boardgames">
+  <div class="wrap">
+    <a href="boardgames/francia.html">Francia</a>
+  </div>
+</div>
+<div class="nav-dropdown-panel" id="dd-novels">
+  <div class="wrap">
+    <a href="novels/immarcescible.html">Immarcescible</a>
+    <a href="novels/anandavira.html">Anandavīra</a>
+    <a href="novels/coeurs-miroirs.html">Cœurs Miroirs</a>
+  </div>
+</div>
+<div class="nav-dropdown-panel" id="dd-moodboard">
+  <div class="wrap">
+    <a href="moodboard.html#anandavira">Anandavīra</a>
+    <a href="moodboard.html#francia">Francia</a>
+    <a href="moodboard.html#immarcescible">Immarcescible</a>
+  </div>
+</div>
 
 <section class="page-head">
   <div class="wrap">
@@ -179,6 +209,7 @@
 </footer>
 
 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<script src="nav.js" defer></script>
 
 </body>
 </html>

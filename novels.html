@@ -18,12 +18,42 @@
     <nav class="site-nav">
       <a href="index.html">Accueil</a>
       <a href="games.html">Jeux vidéo</a>
-      <a href="boardgames.html">Jeux de société</a>
-      <a href="novels.html" aria-current="page">Romans</a>
-      <a href="moodboard.html">Moodboard</a>
+      <span class="nav-item">
+        <a href="boardgames.html">Jeux de société</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-boardgames" aria-label="Sous-menu Jeux de société">▾</button>
+      </span>
+      <span class="nav-item">
+        <a href="novels.html" aria-current="page">Romans</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-novels" aria-label="Sous-menu Romans">▾</button>
+      </span>
+      <span class="nav-item">
+        <a href="moodboard.html">Moodboard</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-moodboard" aria-label="Sous-menu Moodboard">▾</button>
+      </span>
+      <a href="apropos.html">À propos</a>
     </nav>
   </div>
 </header>
+
+<div class="nav-dropdown-panel" id="dd-boardgames">
+  <div class="wrap">
+    <a href="boardgames/francia.html">Francia</a>
+  </div>
+</div>
+<div class="nav-dropdown-panel" id="dd-novels">
+  <div class="wrap">
+    <a href="novels/immarcescible.html">Immarcescible</a>
+    <a href="novels/anandavira.html">Anandavīra</a>
+    <a href="novels/coeurs-miroirs.html">Cœurs Miroirs</a>
+  </div>
+</div>
+<div class="nav-dropdown-panel" id="dd-moodboard">
+  <div class="wrap">
+    <a href="moodboard.html#anandavira">Anandavīra</a>
+    <a href="moodboard.html#francia">Francia</a>
+    <a href="moodboard.html#immarcescible">Immarcescible</a>
+  </div>
+</div>
 
 <section class="page-head">
   <div class="wrap">
@@ -33,44 +63,70 @@
   </div>
 </section>
 
-<section class="wrap entries">
+<section class="wrap">
+  <div class="project-grid">
 
-  <article class="entry entry--novel-chrones" id="immarcescible">
-    <p class="entry-accent">Dark fantasy — saga de plusieurs tomes</p>
-    <h2>Immarcescible</h2>
-    <p>Immortelle mais amnésique, Aelya se réveille dans le Languedoc cathare de 1209, en pleine croisade albigeoise, sans souvenir de qui elle est. De la chute de l'Atlantide à nos jours, elle traverse les âges dans le sillage d'héroïnes oubliées de la résistance française ; Velléda, Hildegarde de Bingen, Jeanne d'Arc, Catherine de Médicis, Olympe de Gouges. Face à elle, un Nephilim infiltré dans l'Église nourrit l'Inquisition pour écraser toute dissidence. Une question la poursuit d'époque en époque : utiliser le mal pour punir le mal, est-ce déjà devenir ce qu'on combat ? Huit tomes structurés, bibles narratives et de personnages achevées ; adaptation en jeu vidéo solo narratif sous Unreal Engine 5 — Chrones : Le Réveil des Cendres (15-20h) — prototype en développement, recherche de financement.</p>
-    <div class="entry-meta">
-      <span class="tag">Immortelle amnésique</span>
-      <span class="tag">Languedoc médiéval</span>
-      <span class="tag">Adaptation en jeu vidéo</span>
+    <div class="project-item">
+      <a class="project-card project-card--novel-chrones" href="novels/immarcescible.html" aria-label="Immarcescible — Immortelle mais amnésique, Aëlya se réveille dans le Languedoc cathare de 1209.">
+        <div class="project-card-media" style="--card-image:url('assets/images/projects/immarcescible.jpg')"></div>
+        <div class="project-card-label">
+          <p class="project-card-kicker">Dark fantasy — saga de plusieurs tomes</p>
+          <h2>Immarcescible</h2>
+        </div>
+        <div class="project-card-overlay">
+          <p class="project-card-kicker">Dark fantasy — saga de plusieurs tomes</p>
+          <h2>Immarcescible</h2>
+          <p class="project-card-desc">Immortelle mais amnésique, Aëlya se réveille dans le Languedoc cathare de 1209, en pleine croisade albigeoise.</p>
+          <div class="entry-meta">
+            <span class="tag">Immortelle amnésique</span>
+            <span class="tag">Languedoc médiéval</span>
+            <span class="tag">Adaptation en jeu vidéo</span>
+          </div>
+        </div>
+      </a>
     </div>
-    <a class="entry-link" href="moodboard.html#immarcescible">Voir des références visuelles →</a>
-  </article>
 
-  <article class="entry entry--novel-anandavira">
-    <p class="entry-accent">Space opera mystique — trilogie</p>
-    <h2>Anandavīra</h2>
-    <p>De l'Atlantide au 23e siècle, quatre protagonistes portent chacun une quête distincte : l'amour, la guérison de la peur, la lutte pour un monde meilleur, la libération de l'illusion. Face à eux, Abrahel, entité astrale déchue, cherche à prouver que l'amour n'est qu'une illusion. Tomes 1 et 2 achevés, tome 3 entièrement structuré ; deux romans prequels et un projet de série animée en développement.</p>
-    <div class="entry-meta">
-      <span class="tag">Trilogie</span>
-      <span class="tag">Prequels en préparation</span>
-      <span class="tag">Adaptation animée</span>
+    <div class="project-item">
+      <a class="project-card project-card--novel-anandavira" href="novels/anandavira.html" aria-label="Anandavīra — De l'Atlantide au 23e siècle, quatre protagonistes portent chacun une quête distincte.">
+        <div class="project-card-media" style="--card-image:url('assets/images/projects/anandavira.jpg')"></div>
+        <div class="project-card-label">
+          <p class="project-card-kicker">Space opera mystique — trilogie</p>
+          <h2>Anandavīra</h2>
+        </div>
+        <div class="project-card-overlay">
+          <p class="project-card-kicker">Space opera mystique — trilogie</p>
+          <h2>Anandavīra</h2>
+          <p class="project-card-desc">De l'Atlantide au 23e siècle, quatre protagonistes portent chacun une quête distincte.</p>
+          <div class="entry-meta">
+            <span class="tag">Trilogie</span>
+            <span class="tag">Prequels en préparation</span>
+            <span class="tag">Adaptation animée</span>
+          </div>
+        </div>
+      </a>
     </div>
-    <a class="entry-link" href="moodboard.html#anandavira">Voir des références visuelles →</a>
-  </article>
 
-  <article class="entry entry--poetry">
-    <p class="entry-accent">Poésie — recueil publié</p>
-    <h2>Cœurs Miroirs</h2>
-    <p>Un recueil où l'amour et le désir se conjuguent au fil des saisons : la rencontre, la passion, la rupture, puis le lent chemin vers la compréhension et la guérison. Une écriture intime, entre romance et érotisme.</p>
-    <div class="entry-meta">
-      <span class="tag">Poésie amoureuse</span>
-      <span class="tag">Romance &amp; érotisme</span>
-      <span class="tag">Publié en 2023</span>
+    <div class="project-item">
+      <a class="project-card project-card--poetry" href="novels/coeurs-miroirs.html" aria-label="Cœurs Miroirs — Un recueil où l'amour et le désir se conjuguent au fil des saisons.">
+        <div class="project-card-media" style="--card-image:url('assets/images/projects/coeurs-miroirs.jpg')"></div>
+        <div class="project-card-label">
+          <p class="project-card-kicker">Poésie — recueil publié</p>
+          <h2>Cœurs Miroirs</h2>
+        </div>
+        <div class="project-card-overlay">
+          <p class="project-card-kicker">Poésie — recueil publié</p>
+          <h2>Cœurs Miroirs</h2>
+          <p class="project-card-desc">Un recueil où l'amour et le désir se conjuguent au fil des saisons.</p>
+          <div class="entry-meta">
+            <span class="tag">Poésie amoureuse</span>
+            <span class="tag">Romance &amp; érotisme</span>
+            <span class="tag">Publié en 2023</span>
+          </div>
+        </div>
+      </a>
     </div>
-    <a class="entry-link" href="https://librairie.bod.fr/coeurs-miroirs-dyllan-demetrios-9782322488438" target="_blank" rel="noopener">Acheter sur BoD →</a>
-  </article>
 
+  </div>
 </section>
 
 <footer class="site-footer">
@@ -92,6 +148,8 @@
     </div>
   </div>
 </footer>
+
+<script src="nav.js" defer></script>
 
 </body>
 </html>

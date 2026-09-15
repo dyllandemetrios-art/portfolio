@@ -18,12 +18,42 @@
     <nav class="site-nav">
       <a href="index.html">Accueil</a>
       <a href="games.html" aria-current="page">Jeux vidéo</a>
-      <a href="boardgames.html">Jeux de société</a>
-      <a href="novels.html">Romans</a>
-      <a href="moodboard.html">Moodboard</a>
+      <span class="nav-item">
+        <a href="boardgames.html">Jeux de société</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-boardgames" aria-label="Sous-menu Jeux de société">▾</button>
+      </span>
+      <span class="nav-item">
+        <a href="novels.html">Romans</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-novels" aria-label="Sous-menu Romans">▾</button>
+      </span>
+      <span class="nav-item">
+        <a href="moodboard.html">Moodboard</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-moodboard" aria-label="Sous-menu Moodboard">▾</button>
+      </span>
+      <a href="apropos.html">À propos</a>
     </nav>
   </div>
 </header>
+
+<div class="nav-dropdown-panel" id="dd-boardgames">
+  <div class="wrap">
+    <a href="boardgames/francia.html">Francia</a>
+  </div>
+</div>
+<div class="nav-dropdown-panel" id="dd-novels">
+  <div class="wrap">
+    <a href="novels/immarcescible.html">Immarcescible</a>
+    <a href="novels/anandavira.html">Anandavīra</a>
+    <a href="novels/coeurs-miroirs.html">Cœurs Miroirs</a>
+  </div>
+</div>
+<div class="nav-dropdown-panel" id="dd-moodboard">
+  <div class="wrap">
+    <a href="moodboard.html#anandavira">Anandavīra</a>
+    <a href="moodboard.html#francia">Francia</a>
+    <a href="moodboard.html#immarcescible">Immarcescible</a>
+  </div>
+</div>
 
 <section class="page-head">
   <div class="wrap">
@@ -39,14 +69,14 @@
     <p class="entry-accent">Pitch</p>
     <h2>Une immortelle sans mémoire, un royaume qui brûle</h2>
     <p>1209, Languedoc. Une femme se réveille dans l'hospice d'un logis seigneurial, le corps marqué, la mémoire en lambeaux. Elle ne sait pas qui elle est. Elle sait seulement qu'elle devrait être morte.</p>
-    <p>Elle s'appelle Aelya. Elle ne vieillit pas — non par magie, mais parce qu'elle descend d'une civilisation antédiluvienne qui a modifié son propre génome. Sa mémoire ne lui reviendra que par fragments : une plante reconnue, un lieu, un visage. Pendant ce temps, le monde autour d'elle brûle. L'Église s'apprête à exterminer les Cathares du Languedoc.</p>
+    <p>Elle s'appelle Aëlya. Elle ne vieillit pas — non par magie, mais parce qu'elle descend d'une civilisation antédiluvienne qui a modifié son propre génome. Sa mémoire ne lui reviendra que par fragments : une plante reconnue, un lieu, un visage. Pendant ce temps, le monde autour d'elle brûle. L'Église s'apprête à exterminer les Cathares du Languedoc.</p>
     <p>Le joueur la suit sur cent vingt-huit ans, jusqu'à la chute des Templiers. Il voit mourir des gens qu'il a connus jeunes. Il revient dans des villages où plus personne ne le reconnaît. Il est le seul à se souvenir.</p>
   </article>
 
   <article class="entry entry--concept">
     <p class="entry-accent">Fiche technique</p>
     <h2>RPG d'action-exploration en Unreal Engine 5</h2>
-    <p>Vue à la troisième personne, caméra à l'épaule. Aelya marche, court, se bat à l'épée ou à l'arc, parle, fouille, se cache — un corps de femme du XIIIe siècle, pas une acrobate. Solo exclusivement, aucune dépendance réseau, achat unique premium sans monétisation in-game.</p>
+    <p>Vue à la troisième personne, caméra à l'épaule. Aëlya marche, court, se bat à l'épée ou à l'arc, parle, fouille, se cache — un corps de femme du XIIIe siècle, pas une acrobate. Solo exclusivement, aucune dépendance réseau, achat unique premium sans monétisation in-game.</p>
     <div class="entry-meta">
       <span class="tag">Unreal Engine 5</span>
       <span class="tag">PC (Steam)</span>
@@ -90,7 +120,7 @@
       <span class="tag">Prototype à venir</span>
       <span class="tag">En développement</span>
     </div>
-    <a class="entry-link" href="novels.html#immarcescible">Voir le roman associé →</a>
+    <a class="entry-link" href="novels/immarcescible.html">Voir le roman associé →</a>
   </article>
 
 </section>
@@ -114,6 +144,8 @@
     </div>
   </div>
 </footer>
+
+<script src="nav.js" defer></script>
 
 </body>
 </html>

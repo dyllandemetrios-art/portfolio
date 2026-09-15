@@ -18,12 +18,42 @@
     <nav class="site-nav">
       <a href="index.html">Accueil</a>
       <a href="games.html" aria-current="page">Jeux vidéo</a>
-      <a href="boardgames.html">Jeux de société</a>
-      <a href="novels.html">Romans</a>
-      <a href="moodboard.html">Moodboard</a>
+      <span class="nav-item">
+        <a href="boardgames.html">Jeux de société</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-boardgames" aria-label="Sous-menu Jeux de société">▾</button>
+      </span>
+      <span class="nav-item">
+        <a href="novels.html">Romans</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-novels" aria-label="Sous-menu Romans">▾</button>
+      </span>
+      <span class="nav-item">
+        <a href="moodboard.html">Moodboard</a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="dd-moodboard" aria-label="Sous-menu Moodboard">▾</button>
+      </span>
+      <a href="apropos.html">À propos</a>
     </nav>
   </div>
 </header>
+
+<div class="nav-dropdown-panel" id="dd-boardgames">
+  <div class="wrap">
+    <a href="boardgames/francia.html">Francia</a>
+  </div>
+</div>
+<div class="nav-dropdown-panel" id="dd-novels">
+  <div class="wrap">
+    <a href="novels/immarcescible.html">Immarcescible</a>
+    <a href="novels/anandavira.html">Anandavīra</a>
+    <a href="novels/coeurs-miroirs.html">Cœurs Miroirs</a>
+  </div>
+</div>
+<div class="nav-dropdown-panel" id="dd-moodboard">
+  <div class="wrap">
+    <a href="moodboard.html#anandavira">Anandavīra</a>
+    <a href="moodboard.html#francia">Francia</a>
+    <a href="moodboard.html#immarcescible">Immarcescible</a>
+  </div>
+</div>
 
 <section class="page-head">
   <div class="wrap">
@@ -33,60 +63,92 @@
   </div>
 </section>
 
-<section class="wrap entries">
+<section class="wrap">
+  <div class="project-grid">
 
-  <article class="entry entry--game">
-    <p class="entry-accent">Unity — infinite runner 3D</p>
-    <h2>Robot Clean</h2>
-    <p>Vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué : collectez les déchets, améliorez votre cœur artificiel avec des composants électroniques, et esquivez les obstacles alors que le monde s'accélère.</p>
-    <div class="entry-meta">
-      <span class="tag">Unity</span>
-      <span class="tag">C#</span>
-      <span class="tag">Architecture événementielle</span>
-      <span class="tag">Génération procédurale</span>
+    <div class="project-item">
+      <a class="project-card project-card--game" href="https://demetrios-games.itch.io/stuffy-infinite-runner" target="_blank" rel="noopener" aria-label="Robot Clean — Vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué.">
+        <div class="project-card-media" style="--card-image:url('assets/images/projects/robot-clean.jpg')"></div>
+        <div class="project-card-label">
+          <p class="project-card-kicker">Unity — infinite runner 3D</p>
+          <h2>Robot Clean</h2>
+        </div>
+        <div class="project-card-overlay">
+          <p class="project-card-kicker">Unity — infinite runner 3D</p>
+          <h2>Robot Clean</h2>
+          <p class="project-card-desc">Vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué.</p>
+          <div class="entry-meta">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Architecture événementielle</span>
+            <span class="tag">Génération procédurale</span>
+          </div>
+        </div>
+      </a>
     </div>
-    <a class="entry-link" href="https://demetrios-games.itch.io/stuffy-infinite-runner" target="_blank" rel="noopener">Jouer sur itch.io →</a>
-  </article>
 
-  <article class="entry entry--game">
-    <p class="entry-accent">Unity — arcade narratif</p>
-    <h2>Eden Snake</h2>
-    <p>Le Snake revisité : choisissez votre pomme — Adam, Ève ou Lilith — chacune ouvrant un chemin narratif différent, jusqu'à un boss caché. Un système de dialogue tissé directement dans la mécanique arcade.</p>
-    <div class="entry-meta">
-      <span class="tag">Unity</span>
-      <span class="tag">Narratif (Ink)</span>
-      <span class="tag">Level design</span>
+    <div class="project-item">
+      <a class="project-card project-card--game" href="https://demetrios-games.itch.io/eden-snake" target="_blank" rel="noopener" aria-label="Eden Snake — Le Snake revisité : choisissez votre pomme, Adam, Ève ou Lilith.">
+        <div class="project-card-media" style="--card-image:url('assets/images/projects/eden-snake.jpg')"></div>
+        <div class="project-card-label">
+          <p class="project-card-kicker">Unity — arcade narratif</p>
+          <h2>Eden Snake</h2>
+        </div>
+        <div class="project-card-overlay">
+          <p class="project-card-kicker">Unity — arcade narratif</p>
+          <h2>Eden Snake</h2>
+          <p class="project-card-desc">Le Snake revisité : choisissez votre pomme — Adam, Ève ou Lilith — chacune ouvrant un chemin narratif différent.</p>
+          <div class="entry-meta">
+            <span class="tag">Unity</span>
+            <span class="tag">Narratif (Ink)</span>
+            <span class="tag">Level design</span>
+          </div>
+        </div>
+      </a>
     </div>
-    <a class="entry-link" href="https://demetrios-games.itch.io/eden-snake" target="_blank" rel="noopener">Jouer sur itch.io →</a>
-  </article>
 
-  <article class="entry entry--game">
-    <p class="entry-accent">Unity — gestion &amp; simulation</p>
-    <h2>Solarpunk Sky Garden</h2>
-    <p>Nestor, un drone vétéran de guerre, doit apprendre à cultiver un jardin suspendu : gérer batterie, eau et bois, entre cycle jour/nuit et météo dynamique — la pluie accélère la pousse, la neige la ralentit.</p>
-    <div class="entry-meta">
-      <span class="tag">Unity</span>
-      <span class="tag">C#</span>
-      <span class="tag">Systèmes événementiels</span>
+    <div class="project-item">
+      <a class="project-card project-card--game" href="https://demetrios-games.itch.io/solarpunk-garden" target="_blank" rel="noopener" aria-label="Solarpunk Sky Garden — Nestor, un drone vétéran de guerre, doit apprendre à cultiver un jardin suspendu.">
+        <div class="project-card-media" style="--card-image:url('assets/images/projects/solarpunk-sky-garden.jpg')"></div>
+        <div class="project-card-label">
+          <p class="project-card-kicker">Unity — gestion &amp; simulation</p>
+          <h2>Solarpunk Sky Garden</h2>
+        </div>
+        <div class="project-card-overlay">
+          <p class="project-card-kicker">Unity — gestion &amp; simulation</p>
+          <h2>Solarpunk Sky Garden</h2>
+          <p class="project-card-desc">Nestor, un drone vétéran de guerre, doit apprendre à cultiver un jardin suspendu.</p>
+          <div class="entry-meta">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Systèmes événementiels</span>
+          </div>
+        </div>
+      </a>
     </div>
-    <a class="entry-link" href="https://demetrios-games.itch.io/solarpunk-garden" target="_blank" rel="noopener">Jouer sur itch.io →</a>
-  </article>
 
-  <article class="entry entry--game">
-    <p class="entry-accent">Unreal Engine 5 — RPG narratif</p>
-    <h2>Chrones : Le Réveil des Cendres</h2>
-    <p>Prototype à venir, adaptant la saga dark fantasy Immarcescible : Languedoc médiéval, croisade des Albigeois, et une immortelle amnésique en quête de vérité.</p>
-    <div class="entry-meta">
-      <span class="tag">Unreal Engine 5</span>
-      <span class="tag">RPG narratif</span>
-      <span class="tag">Prototype à venir</span>
+    <div class="project-item">
+      <a class="project-card project-card--game" href="concept-chrones.html" aria-label="Chrones : Le Réveil des Cendres — Prototype à venir, adaptant la saga dark fantasy Immarcescible.">
+        <div class="project-card-media" style="--card-image:url('assets/images/projects/chrones.jpg')"></div>
+        <div class="project-card-label">
+          <p class="project-card-kicker">Unreal Engine 5 — RPG narratif</p>
+          <h2>Chrones : Le Réveil des Cendres</h2>
+        </div>
+        <div class="project-card-overlay">
+          <p class="project-card-kicker">Unreal Engine 5 — RPG narratif</p>
+          <h2>Chrones : Le Réveil des Cendres</h2>
+          <p class="project-card-desc">Prototype à venir, adaptant la saga dark fantasy Immarcescible : Languedoc médiéval, croisade des Albigeois.</p>
+          <div class="entry-meta">
+            <span class="tag">Unreal Engine 5</span>
+            <span class="tag">RPG narratif</span>
+            <span class="tag">Prototype à venir</span>
+          </div>
+        </div>
+      </a>
+      <a class="project-secondary-link" href="novels/immarcescible.html">Voir le roman associé →</a>
     </div>
-    <div class="entry-links">
-      <a class="entry-link" href="concept-chrones.html">Voir le game concept complet →</a>
-      <a class="entry-link" href="novels.html#immarcescible">Voir le roman associé →</a>
-    </div>
-  </article>
 
+  </div>
 </section>
 
 <footer class="site-footer">
@@ -108,6 +170,8 @@
     </div>
   </div>
 </footer>
+
+<script src="nav.js" defer></script>
 
 </body>
 </html>

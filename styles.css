@@ -112,56 +112,43 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
+  position: relative;
 }
 
-.nav-caret {
-  background: none;
-  border: none;
-  padding: 4px;
-  margin: 0;
-  color: var(--bone-dim);
-  font-size: 0.65rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: color 0.15s ease, transform 0.15s ease;
-}
-
-.nav-caret:hover { color: var(--bone); }
-
-.nav-item.is-open .nav-caret {
-  color: var(--brass);
-  transform: rotate(180deg);
-}
-
-.nav-dropdown-panel {
-  display: none;
-  border-bottom: 1px solid var(--stone);
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 14px;
+  min-width: 190px;
   background: var(--ink-raised);
+  border: 1px solid var(--stone);
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+  z-index: 20;
 }
 
-.nav-dropdown-panel.is-open { display: block; }
-
-.nav-dropdown-panel .wrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 28px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+.nav-item:hover .nav-dropdown,
+.nav-item:focus-within .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
-.nav-dropdown-panel a {
+.nav-dropdown a {
+  display: block;
+  padding: 8px 18px;
   color: var(--bone-dim);
-  font-size: 0.92rem;
-  border-bottom: 1px solid transparent;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border-bottom: none;
 }
 
-.nav-dropdown-panel a:hover {
+.nav-dropdown a:hover {
   color: var(--bone);
-  border-bottom-color: var(--brass);
 }
 
 /* ---------- hero ---------- */

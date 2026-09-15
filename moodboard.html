@@ -62,7 +62,6 @@
     <div class="board-block">
       <div class="board-head">
         <h3>Vaisseaux &amp; stations spatiales</h3>
-        <a class="board-link" href="https://fr.pinterest.com/ddmtrios/anandav%C4%ABra-vaisseaux-stations-spatiales/" target="_blank" rel="noopener">Voir sur Pinterest →</a>
       </div>
       <div class="moodboard-embed">
         <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="240" data-pin-scale-width="80"
@@ -73,7 +72,6 @@
     <div class="board-block">
       <div class="board-head">
         <h3>Inspi Aurora</h3>
-        <a class="board-link" href="https://fr.pinterest.com/ddmtrios/anandav%C4%ABra-inspi-aurora/" target="_blank" rel="noopener">Voir sur Pinterest →</a>
       </div>
       <div class="moodboard-embed">
         <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="240" data-pin-scale-width="80"
@@ -84,7 +82,6 @@
     <div class="board-block">
       <div class="board-head">
         <h3>Cybernétique</h3>
-        <a class="board-link" href="https://fr.pinterest.com/ddmtrios/anandav%C4%ABra-cybern%C3%A9tique/" target="_blank" rel="noopener">Voir sur Pinterest →</a>
       </div>
       <div class="moodboard-embed">
         <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="240" data-pin-scale-width="80"
@@ -95,7 +92,6 @@
     <div class="board-block">
       <div class="board-head">
         <h3>Mégalopole</h3>
-        <a class="board-link" href="https://fr.pinterest.com/ddmtrios/anandav%C4%ABra-m%C3%A9galopole/" target="_blank" rel="noopener">Voir sur Pinterest →</a>
       </div>
       <div class="moodboard-embed">
         <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="240" data-pin-scale-width="80"
@@ -106,7 +102,6 @@
     <div class="board-block">
       <div class="board-head">
         <h3>Monde souterrain</h3>
-        <a class="board-link" href="https://fr.pinterest.com/ddmtrios/anandav%C4%ABra-monde-sous-terrain/" target="_blank" rel="noopener">Voir sur Pinterest →</a>
       </div>
       <div class="moodboard-embed">
         <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="240" data-pin-scale-width="80"
@@ -117,7 +112,6 @@
     <div class="board-block">
       <div class="board-head">
         <h3>Cataclysme</h3>
-        <a class="board-link" href="https://fr.pinterest.com/ddmtrios/anandav%C4%ABra-cataclysme/" target="_blank" rel="noopener">Voir sur Pinterest →</a>
       </div>
       <div class="moodboard-embed">
         <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="240" data-pin-scale-width="80"
@@ -133,7 +127,6 @@
     <div class="board-block">
       <div class="board-head">
         <h3>Créatures</h3>
-        <a class="board-link" href="https://fr.pinterest.com/ddmtrios/francia-creatures/" target="_blank" rel="noopener">Voir sur Pinterest →</a>
       </div>
       <div class="moodboard-embed">
         <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="240" data-pin-scale-width="80"
@@ -144,7 +137,6 @@
     <div class="board-block">
       <div class="board-head">
         <h3>Ambiance</h3>
-        <a class="board-link" href="https://fr.pinterest.com/ddmtrios/francia-ambiance/" target="_blank" rel="noopener">Voir sur Pinterest →</a>
       </div>
       <div class="moodboard-embed">
         <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="240" data-pin-scale-width="80"
@@ -155,7 +147,6 @@
     <div class="board-block" id="francia-heros">
       <div class="board-head">
         <h3>Héros</h3>
-        <a class="board-link" href="https://fr.pinterest.com/ddmtrios/francia-h%C3%A9ros/" target="_blank" rel="noopener">Voir sur Pinterest →</a>
       </div>
       <div class="moodboard-embed">
         <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="240" data-pin-scale-width="80"
@@ -167,7 +158,6 @@
   <div class="board-group board-group--immarcescible" id="immarcescible">
     <div class="board-head">
       <h2>Immarcescible</h2>
-      <a class="board-link" href="https://fr.pinterest.com/ddmtrios/immarcescible/" target="_blank" rel="noopener">Voir sur Pinterest →</a>
     </div>
     <p class="group-desc">Dark fantasy : Languedoc médiéval, croisade des Albigeois.</p>
     <div class="moodboard-embed">
@@ -199,6 +189,23 @@
 </footer>
 
 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<script>
+  // Les boards Pinterest se chargent de façon asynchrone et changent
+  // la hauteur de la page après coup : le défilement natif vers l'ancre
+  // (#immarcescible, etc.) peut donc atterrir trop haut. On corrige en
+  // reprogrammant le défilement pendant que les boards se chargent.
+  if (location.hash) {
+    var scrollToHash = function () {
+      var el = document.querySelector(location.hash);
+      if (el) el.scrollIntoView();
+    };
+    window.addEventListener('load', function () {
+      scrollToHash();
+      setTimeout(scrollToHash, 1200);
+      setTimeout(scrollToHash, 2500);
+    });
+  }
+</script>
 
 </body>
 </html>

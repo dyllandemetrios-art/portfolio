@@ -296,6 +296,10 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
+.entry p + p {
+  margin-top: 14px;
+}
+
 .entry-meta {
   display: flex;
   flex-wrap: wrap;
@@ -316,6 +320,11 @@ img { max-width: 100%; display: block; }
   font-size: 0.95rem;
   border-bottom: 1px solid currentColor;
   width: fit-content;
+  transition: color 0.15s ease;
+}
+
+.entry-link:hover {
+  color: var(--bone);
 }
 
 .entry-links {

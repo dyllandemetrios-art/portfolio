@@ -92,6 +92,13 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.02em;
 }
 
+.site-role-sub {
+  font-size: 0.72rem;
+  color: var(--brass);
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+
 .site-nav {
   display: flex;
   gap: 22px;

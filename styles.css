@@ -122,6 +122,8 @@ img { max-width: 100%; display: block; }
 
 .nav-item {
   position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-dropdown {

@@ -778,13 +778,6 @@ img { max-width: 100%; display: block; }
   font-size: 0.88rem;
 }
 
-.site-footer .wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px 24px;
-  justify-content: space-between;
-}
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
@@ -810,7 +803,6 @@ img { max-width: 100%; display: block; }
 
   .board-head { flex-direction: column; align-items: flex-start; }
 
-  .site-footer .wrap { flex-direction: column; align-items: flex-start; gap: 16px; }
   .header-links { width: 100%; justify-content: space-between; }
 }
 

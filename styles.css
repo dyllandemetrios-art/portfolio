@@ -158,6 +158,48 @@ img { max-width: 100%; display: block; }
   color: var(--bone);
 }
 
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 22px;
+}
+
+.header-links > a {
+  color: var(--bone-dim);
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.header-links > a:hover {
+  color: var(--bone);
+  border-bottom-color: var(--brass);
+}
+
+.header-links .socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-links .socials a {
+  display: inline-flex;
+  color: var(--bone-dim);
+  border-bottom: none;
+  transition: color 0.15s ease;
+}
+
+.header-links .socials a:hover {
+  color: var(--brass);
+}
+
+.header-links .socials svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
 /* ---------- hero ---------- */
 
 .hero {
@@ -729,8 +771,7 @@ img { max-width: 100%; display: block; }
 /* ---------- footer ---------- */
 
 .site-footer {
-  border-top: 1px solid var(--stone);
-  padding: 28px 0 60px;
+  padding: 0;
   color: var(--bone-dim);
   font-size: 0.88rem;
 }
@@ -741,45 +782,6 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: 10px 24px;
   justify-content: space-between;
-}
-
-.site-footer a {
-  border-bottom: 1px solid transparent;
-}
-
-.site-footer a:hover {
-  color: var(--bone);
-  border-bottom-color: var(--brass);
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px 22px;
-}
-
-.socials {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.socials a {
-  display: inline-flex;
-  color: var(--bone-dim);
-  border-bottom: none;
-  transition: color 0.15s ease;
-}
-
-.socials a:hover {
-  color: var(--brass);
-}
-
-.socials svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -806,7 +808,7 @@ img { max-width: 100%; display: block; }
   .board-head { flex-direction: column; align-items: flex-start; }
 
   .site-footer .wrap { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .footer-links { width: 100%; justify-content: space-between; }
+  .header-links { width: 100%; justify-content: space-between; }
 }
 
 @media (max-width: 480px) {

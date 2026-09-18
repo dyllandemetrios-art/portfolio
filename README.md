@@ -21,7 +21,6 @@ games/solarpunk-sky-garden.html  fiche projet — gestion & simulation Unity
 boardgames/francia.html      Francia — jeu de plateau coopératif
 novels/immarcescible.html    dark fantasy
 novels/anandavira.html       space opera
-novels/coeurs-miroirs.html   recueil de poésie
 moodboard.html                références visuelles (Pinterest)
 apropos.html                  parcours et contact
 styles.css                    feuille de style unique

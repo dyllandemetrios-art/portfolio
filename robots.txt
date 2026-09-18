@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dyllandemetrios.vercel.app/sitemap.xml

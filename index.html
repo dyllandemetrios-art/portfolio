@@ -36,7 +36,7 @@
   "@type": "Person",
   "name": "Dyllan Démétrios",
   "alternateName": "Dylan Boiteux",
-  "jobTitle": ["Game Designer", "Auteur"],
+  "jobTitle": "Game Designer",
   "url": "https://dyllandemetrios.vercel.app/",
   "image": "https://dyllandemetrios.vercel.app/assets/images/og-default.jpg",
   "email": "mailto:dyllandemetrios@gmail.com",
@@ -67,90 +67,239 @@
     <nav class="site-nav">
       <a href="index.html" aria-current="page">Accueil</a>
       <span class="nav-item">
-        <a href="games.html">Jeux vidéo</a>
+        <a href="index.html#projets">Projets</a>
         <div class="nav-dropdown">
-          <a href="games/robot-clean.html">Robot Clean</a>
-          <a href="games/eden-snake.html">Eden Snake</a>
-          <a href="games/solarpunk-sky-garden.html">Solarpunk Sky Garden</a>
-        </div>
-      </span>
-      <span class="nav-item">
-        <a href="boardgames.html">Jeux de société</a>
-        <div class="nav-dropdown">
-          <a href="boardgames/francia.html">Francia</a>
-        </div>
-      </span>
-      <span class="nav-item">
-        <a href="novels.html">Romans</a>
-        <div class="nav-dropdown">
-          <a href="novels/immarcescible.html">Immarcescible</a>
-          <a href="novels/anandavira.html">Anandavīra</a>
-          <a href="novels/coeurs-miroirs.html">Cœurs Miroirs</a>
-        </div>
-      </span>
-      <span class="nav-item">
-        <a href="moodboard.html">Moodboard</a>
-        <div class="nav-dropdown">
-          <a href="moodboard.html#anandavira">Anandavīra</a>
-          <a href="moodboard.html#francia">Francia</a>
-          <a href="moodboard.html#immarcescible">Immarcescible</a>
+          <a href="index.html#jeux-video">Jeux vidéo</a>
+          <a href="index.html#jeux-de-societe">Jeux de société</a>
+          <a href="index.html#ecriture">Écriture</a>
         </div>
       </span>
       <a href="apropos.html">À propos</a>
+      <a href="assets/cv_game_design.pdf" target="_blank" rel="noopener">CV</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
-    <h1>J'aime construire des mondes, en programmes et en mots.</h1>
-    <p>Je conçois des expériences de jeu en travaillant sur les mécaniques, les systèmes, la progression et leur intégration narrative. Je développe mes prototypes sous Unity et Unreal Engine, de la conception jusqu'à l'implémentation.</p>
+    <p class="kicker">Game Designer</p>
+    <h1>Je conçois des mécaniques, des systèmes et des expériences de jeu, avec un intérêt particulier pour le gameplay systémique et la narration.</h1>
+    <p class="hero-tags">Prototypes Unity &amp; Unreal Engine · Game Design · Systems Design · Narrative Design</p>
+    <p class="hero-signature">« J'aime construire des mondes, en programmes et en mots. »</p>
   </div>
 </section>
 
-<section class="wrap">
-  <ul class="pillars">
-    <li>
-      <a href="games.html">
-        <span class="pillar-index">01</span>
-        <span class="pillar-body">
-          <span class="pillar-name">Jeux vidéo</span>
-          <span class="pillar-desc">Prototypes et projets Unity et Unreal Engine.</span>
-        </span>
-        <span class="pillar-go">→</span>
-      </a>
-    </li>
-    <li>
-      <a href="boardgames.html">
-        <span class="pillar-index">02</span>
-        <span class="pillar-body">
-          <span class="pillar-name">Jeux de société</span>
-          <span class="pillar-desc">Francia, jeu de plateau coopératif médiéval-fantastique.</span>
-        </span>
-        <span class="pillar-go">→</span>
-      </a>
-    </li>
-    <li>
-      <a href="novels.html">
-        <span class="pillar-index">03</span>
-        <span class="pillar-body">
-          <span class="pillar-name">Romans</span>
-          <span class="pillar-desc">Deux sagas en cours : dark fantasy et space opera.</span>
-        </span>
-        <span class="pillar-go">→</span>
-      </a>
-    </li>
-    <li>
-      <a href="moodboard.html">
-        <span class="pillar-index">04</span>
-        <span class="pillar-body">
-          <span class="pillar-name">Moodboard</span>
-          <span class="pillar-desc">Références visuelles, mises à jour depuis Pinterest.</span>
-        </span>
-        <span class="pillar-go">→</span>
-      </a>
-    </li>
-  </ul>
+<section class="wrap" id="projets">
+  <div class="section-head">
+    <p class="kicker">Mes projets</p>
+  </div>
+
+  <div class="project-category" id="jeux-video">
+    <h2>Jeux vidéo</h2>
+    <div class="project-grid">
+
+      <div class="project-item">
+        <a class="project-card project-card--game" href="concept-chrones.html" aria-label="Chrones : Le Réveil des Cendres — RPG d'action-exploration historique où la mémoire devient une mécanique de progression.">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/chrones.jpg')"></div>
+          <div class="project-card-label">
+            <p class="project-card-kicker">Unreal Engine 5 — RPG narratif</p>
+            <h2>Chrones : Le Réveil des Cendres</h2>
+          </div>
+          <div class="project-card-overlay">
+            <p class="project-card-kicker">Unreal Engine 5 — RPG narratif</p>
+            <h2>Chrones : Le Réveil des Cendres</h2>
+            <p class="project-card-desc">RPG d'action-exploration historique où la mémoire devient une mécanique de progression.</p>
+            <p class="project-card-role">Rôle</p>
+            <div class="entry-meta">
+              <span class="tag tag--role">Game Design</span>
+            </div>
+            <div class="entry-meta">
+              <span class="tag">Unreal Engine 5</span>
+              <span class="tag">RPG narratif</span>
+              <span class="tag">Prototype à venir</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="project-item">
+        <a class="project-card project-card--game" href="games/robot-clean.html" aria-label="Robot Clean — Vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué.">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/robot-clean.jpg')"></div>
+          <div class="project-card-label">
+            <p class="project-card-kicker">Unity — infinite runner 3D</p>
+            <h2>Robot Clean</h2>
+          </div>
+          <div class="project-card-overlay">
+            <p class="project-card-kicker">Unity — infinite runner 3D</p>
+            <h2>Robot Clean</h2>
+            <p class="project-card-desc">Vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué.</p>
+            <p class="project-card-role">Rôle</p>
+            <div class="entry-meta">
+              <span class="tag tag--role">Gameplay Programming</span>
+              <span class="tag tag--role">Systems Design</span>
+            </div>
+            <div class="entry-meta">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Architecture événementielle</span>
+              <span class="tag">Génération procédurale</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="project-item">
+        <a class="project-card project-card--game" href="games/eden-snake.html" aria-label="Eden Snake — Le Snake revisité : choisissez votre pomme, Adam, Ève ou Lilith.">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/eden-snake.jpg')"></div>
+          <div class="project-card-label">
+            <p class="project-card-kicker">Unity — arcade narratif</p>
+            <h2>Eden Snake</h2>
+          </div>
+          <div class="project-card-overlay">
+            <p class="project-card-kicker">Unity — arcade narratif</p>
+            <h2>Eden Snake</h2>
+            <p class="project-card-desc">Le Snake revisité : choisissez votre pomme — Adam, Ève ou Lilith — chacune ouvrant un chemin narratif différent.</p>
+            <p class="project-card-role">Rôles</p>
+            <div class="entry-meta">
+              <span class="tag tag--role">Game Design</span>
+              <span class="tag tag--role">Narrative Design</span>
+              <span class="tag tag--role">Gameplay Programming</span>
+            </div>
+            <div class="entry-meta">
+              <span class="tag">Unity</span>
+              <span class="tag">Narratif (Ink)</span>
+              <span class="tag">Level design</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="project-item">
+        <a class="project-card project-card--game" href="games/solarpunk-sky-garden.html" aria-label="Solarpunk Sky Garden — Nestor, un drone vétéran de guerre, doit apprendre à cultiver un jardin suspendu.">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/solarpunk-sky-garden.jpg')"></div>
+          <div class="project-card-label">
+            <p class="project-card-kicker">Unity — gestion &amp; simulation</p>
+            <h2>Solarpunk Sky Garden</h2>
+          </div>
+          <div class="project-card-overlay">
+            <p class="project-card-kicker">Unity — gestion &amp; simulation</p>
+            <h2>Solarpunk Sky Garden</h2>
+            <p class="project-card-desc">Nestor, un drone vétéran de guerre, doit apprendre à cultiver un jardin suspendu.</p>
+            <p class="project-card-role">Rôle</p>
+            <div class="entry-meta">
+              <span class="tag tag--role">Gameplay Programming</span>
+              <span class="tag tag--role">Systems Design</span>
+            </div>
+            <div class="entry-meta">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Systèmes événementiels</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="project-category" id="jeux-de-societe">
+    <h2>Jeux de société</h2>
+    <div class="project-grid">
+
+      <div class="project-item">
+        <a class="project-card project-card--boardgame" href="boardgames/francia.html" aria-label="Francia — Francia se déroule dans une version mythologique de la Francie du XIIIe siècle.">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/francia.jpg')"></div>
+          <div class="project-card-label">
+            <p class="project-card-kicker">Jeu de plateau coopératif</p>
+            <h2>Francia</h2>
+          </div>
+          <div class="project-card-overlay">
+            <p class="project-card-kicker">Jeu de plateau coopératif</p>
+            <h2>Francia</h2>
+            <p class="project-card-desc">Francia se déroule dans une version mythologique de la Francie du XIIIe siècle, rongée par l'Ombrume.</p>
+            <div class="entry-meta">
+              <span class="tag">1 à 6 joueurs</span>
+              <span class="tag">Coopératif</span>
+              <span class="tag">Folklore français</span>
+              <span class="tag">En conception</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="project-category" id="ecriture">
+    <h2>Écriture</h2>
+    <p class="section-lead">Je développe également des univers narratifs destinés à la littérature, au jeu vidéo et à l'animation.</p>
+    <p class="section-lead-tags">Writing · Worldbuilding · Narrative Design</p>
+    <div class="project-grid">
+
+      <div class="project-item">
+        <a class="project-card project-card--novel-anandavira" href="novels/anandavira.html" aria-label="Anandavīra — De l'Atlantide au 23e siècle, quatre protagonistes portent chacun une quête distincte.">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/anandavira.jpg')"></div>
+          <div class="project-card-label">
+            <p class="project-card-kicker">Space opera mystique — trilogie</p>
+            <h2>Anandavīra</h2>
+          </div>
+          <div class="project-card-overlay">
+            <p class="project-card-kicker">Space opera mystique — trilogie</p>
+            <h2>Anandavīra</h2>
+            <p class="project-card-desc">De l'Atlantide au 23e siècle, quatre protagonistes portent chacun une quête distincte.</p>
+            <div class="entry-meta">
+              <span class="tag">Trilogie</span>
+              <span class="tag">Prequels en préparation</span>
+              <span class="tag">Adaptation animée</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="project-item">
+        <a class="project-card project-card--novel-chrones" href="novels/immarcescible.html" aria-label="Immarcescible — Immortelle mais amnésique, Aelya se réveille dans le Languedoc cathare de 1209.">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/immarcescible.jpg')"></div>
+          <div class="project-card-label">
+            <p class="project-card-kicker">Dark fantasy — saga de plusieurs tomes</p>
+            <h2>Immarcescible</h2>
+          </div>
+          <div class="project-card-overlay">
+            <p class="project-card-kicker">Dark fantasy — saga de plusieurs tomes</p>
+            <h2>Immarcescible</h2>
+            <p class="project-card-desc">Immortelle mais amnésique, Aelya se réveille dans le Languedoc cathare de 1209, en pleine croisade albigeoise.</p>
+            <div class="entry-meta">
+              <span class="tag">Immortelle amnésique</span>
+              <span class="tag">Languedoc médiéval</span>
+              <span class="tag">Adaptation en jeu vidéo</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="project-item">
+        <a class="project-card project-card--poetry" href="novels/coeurs-miroirs.html" aria-label="Cœurs Miroirs — Un recueil où l'amour et le désir se conjuguent au fil des saisons.">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/coeurs-miroirs.jpg')"></div>
+          <div class="project-card-label">
+            <p class="project-card-kicker">Poésie — recueil publié</p>
+            <h2>Cœurs Miroirs</h2>
+          </div>
+          <div class="project-card-overlay">
+            <p class="project-card-kicker">Poésie — recueil publié</p>
+            <h2>Cœurs Miroirs</h2>
+            <p class="project-card-desc">Un recueil où l'amour et le désir se conjuguent au fil des saisons.</p>
+            <div class="entry-meta">
+              <span class="tag">Poésie amoureuse</span>
+              <span class="tag">Romance &amp; érotisme</span>
+              <span class="tag">Publié en 2023</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="moodboard-pointer"><a class="entry-link" href="moodboard.html">Voir le moodboard →</a></p>
 </section>
 
 <section class="contact-section">

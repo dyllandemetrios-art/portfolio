@@ -165,6 +165,12 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid var(--stone);
 }
 
+.hero .kicker {
+  font-size: 0.85rem;
+  color: var(--brass);
+  margin: 0 0 14px;
+}
+
 .hero h1 {
   font-family: var(--serif);
   font-weight: 500;
@@ -180,7 +186,20 @@ img { max-width: 100%; display: block; }
   font-size: 1.05rem;
 }
 
-/* ---------- pillar list (home) ---------- */
+.hero .hero-tags {
+  color: var(--brass);
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+.hero .hero-signature {
+  font-style: italic;
+  color: var(--bone-dim);
+  font-size: 0.95rem;
+  margin-top: 28px;
+}
+
+/* ---------- pillar list (home, legacy) ---------- */
 
 .pillars {
   list-style: none;
@@ -191,6 +210,49 @@ img { max-width: 100%; display: block; }
 
 .pillars li {
   border-bottom: 1px solid var(--stone);
+}
+
+/* ---------- projects (home) ---------- */
+
+.section-head {
+  padding: 48px 0 8px;
+}
+
+.section-head .kicker {
+  font-size: 0.85rem;
+  color: var(--bone-dim);
+  margin: 0;
+}
+
+.project-category {
+  padding-top: 40px;
+}
+
+.project-category:first-of-type {
+  padding-top: 24px;
+}
+
+.project-category > h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin: 0 0 20px;
+}
+
+.section-lead {
+  color: var(--bone-dim);
+  max-width: 72ch;
+  margin: 0 0 6px;
+}
+
+.section-lead-tags {
+  color: var(--brass);
+  font-size: 0.9rem;
+  margin: 0 0 20px;
+}
+
+.moodboard-pointer {
+  padding: 8px 0 40px;
 }
 
 .pillars a {

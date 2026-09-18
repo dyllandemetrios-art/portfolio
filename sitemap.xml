@@ -7,7 +7,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dyllandemetrios.vercel.app/games.html</loc>
+    <loc>https://dyllandemetrios.vercel.app/concept-chrones.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -31,22 +31,10 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dyllandemetrios.vercel.app/boardgames.html</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://dyllandemetrios.vercel.app/boardgames/francia.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dyllandemetrios.vercel.app/novels.html</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dyllandemetrios.vercel.app/novels/immarcescible.html</loc>
@@ -71,12 +59,6 @@
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://dyllandemetrios.vercel.app/concept-chrones.html</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://dyllandemetrios.vercel.app/apropos.html</loc>

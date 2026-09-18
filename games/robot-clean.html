@@ -41,47 +41,26 @@
     <nav class="site-nav">
       <a href="../index.html">Accueil</a>
       <span class="nav-item">
-        <a href="../games.html" aria-current="page">Jeux vidéo</a>
+        <a href="../index.html#projets" aria-current="page">Projets</a>
         <div class="nav-dropdown">
-          <a href="../games/robot-clean.html">Robot Clean</a>
-          <a href="../games/eden-snake.html">Eden Snake</a>
-          <a href="../games/solarpunk-sky-garden.html">Solarpunk Sky Garden</a>
-        </div>
-      </span>
-      <span class="nav-item">
-        <a href="../boardgames.html">Jeux de société</a>
-        <div class="nav-dropdown">
-          <a href="../boardgames/francia.html">Francia</a>
-        </div>
-      </span>
-      <span class="nav-item">
-        <a href="../novels.html">Romans</a>
-        <div class="nav-dropdown">
-          <a href="../novels/immarcescible.html">Immarcescible</a>
-          <a href="../novels/anandavira.html">Anandavīra</a>
-          <a href="../novels/coeurs-miroirs.html">Cœurs Miroirs</a>
-        </div>
-      </span>
-      <span class="nav-item">
-        <a href="../moodboard.html">Moodboard</a>
-        <div class="nav-dropdown">
-          <a href="../moodboard.html#anandavira">Anandavīra</a>
-          <a href="../moodboard.html#francia">Francia</a>
-          <a href="../moodboard.html#immarcescible">Immarcescible</a>
+          <a href="../index.html#jeux-video">Jeux vidéo</a>
+          <a href="../index.html#jeux-de-societe">Jeux de société</a>
+          <a href="../index.html#ecriture">Écriture</a>
         </div>
       </span>
       <a href="../apropos.html">À propos</a>
+      <a href="../assets/cv_game_design.pdf" target="_blank" rel="noopener">CV</a>
     </nav>
   </div>
 </header>
 
 <div class="wrap back-link-wrap">
-  <a class="back-link" href="../games.html">← Retour à Jeux</a>
+  <a class="back-link" href="../index.html#jeux-video">← Retour à Jeux vidéo</a>
 </div>
 
 <section class="page-head">
   <div class="wrap">
-    <p class="kicker">01 · Jeux</p>
+    <p class="kicker">Jeux vidéo</p>
     <h1>Robot Clean</h1>
     <p>Unity — infinite runner 3D.</p>
   </div>
@@ -93,9 +72,10 @@
     <p class="entry-accent">Pitch</p>
     <p>Robot Clean est un infinite runner 3D où vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué. Collectez des déchets pour survivre, récupérez des composants électroniques pour améliorer votre cœur artificiel, et esquivez les obstacles alors que le monde s'accélère autour de vous.</p>
     <p>Projet réalisé en équipe avec plusieurs game designers, dans le cadre de ma formation à Gaming Campus.</p>
-    <p class="entry-accent">Rôle</p>
+    <p class="entry-accent">Mon rôle</p>
     <div class="entry-meta">
-      <span class="tag tag--role">Programmation Gameplay</span>
+      <span class="tag tag--role">Gameplay Programming</span>
+      <span class="tag tag--role">Systems Design</span>
     </div>
   </article>
 
@@ -105,23 +85,24 @@
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Ce troisième projet Unity m'a appris</p>
-    <h2>Architecture, génération procédurale et ressenti du gameplay</h2>
-    <p><strong>Architecture événementielle</strong> : des systèmes découplés communiquant via un bus d'événements statique, éliminant les dépendances directes entre managers.</p>
-    <p><strong>Génération procédurale</strong> : génération aléatoire pondérée de segments avec distribution de difficulté configurable.</p>
-    <p><strong>Système de progression persistant</strong> : sérialisation JSON pour les arbres de compétences, meilleurs scores et économie de composants d'une session à l'autre.</p>
-    <p><strong>Conception de machine à états</strong> : gestion propre du déroulement du jeu à travers les états Compte à rebours, Gameplay et Game Over.</p>
-    <p><strong>Ressenti du gameplay</strong> : coroutines de mouvement interruptibles, feedback de clignotement d'invincibilité exponentiel, réactivité des contrôles proportionnelle à la vitesse.</p>
+    <p class="entry-accent">Ce que j'ai conçu / contribué à concevoir</p>
+    <p><strong>Boucle de gameplay</strong> : machine à états gérant proprement le déroulement du jeu à travers les états Compte à rebours, Gameplay et Game Over.</p>
+    <p><strong>Progression</strong> : arbre de compétences à 5 branches modifiant des paramètres en temps réel (PV, drain, armure, invincibilité, soin), avec sérialisation persistante des compétences, meilleurs scores et économie de composants d'une session à l'autre.</p>
+    <p><strong>Génération des segments</strong> : génération procédurale pondérée, avec distribution de difficulté configurable.</p>
+    <p><strong>Difficulté progressive</strong> : courbe de vitesse avec augmentation exponentielle et plafond.</p>
+    <p><strong>Feedback et game feel</strong> : coroutines de mouvement interruptibles, clignotement d'invincibilité exponentiel, réactivité des contrôles proportionnelle à la vitesse.</p>
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Points techniques</p>
-    <p>Courbe de vitesse progressive avec augmentation exponentielle et plafond, arbre de compétences à 5 branches modifiant des paramètres en temps réel (PV, drain, armure, invincibilité, soin), détection de collision sphérique personnalisée avec filtrage par tag pour distinguer obstacles et objets à collecter, détection du sol dynamique par raycast pour un atterrissage précis après un saut, gestion audio centralisée avec changement automatique de musique selon l'état du jeu.</p>
+    <p class="entry-accent">Implémentation</p>
+    <p>Architecture événementielle via un bus d'événements statique éliminant les dépendances directes entre managers, détection de collision sphérique personnalisée avec filtrage par tag pour distinguer obstacles et objets à collecter, détection du sol dynamique par raycast pour un atterrissage précis après un saut, gestion audio centralisée avec changement automatique de musique selon l'état du jeu, sérialisation JSON pour la persistance.</p>
     <div class="entry-meta">
       <span class="tag">Unity</span>
       <span class="tag">C#</span>
       <span class="tag">Architecture événementielle</span>
       <span class="tag">Génération procédurale</span>
+      <span class="tag">JSON</span>
+      <span class="tag">Machine à états</span>
     </div>
     <div class="entry-links">
       <a class="entry-link" href="https://demetrios-games.itch.io/stuffy-infinite-runner" target="_blank" rel="noopener">Jouer sur itch.io →</a>

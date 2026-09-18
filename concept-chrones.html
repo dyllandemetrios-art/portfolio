@@ -41,36 +41,15 @@
     <nav class="site-nav">
       <a href="index.html">Accueil</a>
       <span class="nav-item">
-        <a href="games.html" aria-current="page">Jeux vidéo</a>
+        <a href="index.html#projets" aria-current="page">Projets</a>
         <div class="nav-dropdown">
-          <a href="games/robot-clean.html">Robot Clean</a>
-          <a href="games/eden-snake.html">Eden Snake</a>
-          <a href="games/solarpunk-sky-garden.html">Solarpunk Sky Garden</a>
-        </div>
-      </span>
-      <span class="nav-item">
-        <a href="boardgames.html">Jeux de société</a>
-        <div class="nav-dropdown">
-          <a href="boardgames/francia.html">Francia</a>
-        </div>
-      </span>
-      <span class="nav-item">
-        <a href="novels.html">Romans</a>
-        <div class="nav-dropdown">
-          <a href="novels/immarcescible.html">Immarcescible</a>
-          <a href="novels/anandavira.html">Anandavīra</a>
-          <a href="novels/coeurs-miroirs.html">Cœurs Miroirs</a>
-        </div>
-      </span>
-      <span class="nav-item">
-        <a href="moodboard.html">Moodboard</a>
-        <div class="nav-dropdown">
-          <a href="moodboard.html#anandavira">Anandavīra</a>
-          <a href="moodboard.html#francia">Francia</a>
-          <a href="moodboard.html#immarcescible">Immarcescible</a>
+          <a href="index.html#jeux-video">Jeux vidéo</a>
+          <a href="index.html#jeux-de-societe">Jeux de société</a>
+          <a href="index.html#ecriture">Écriture</a>
         </div>
       </span>
       <a href="apropos.html">À propos</a>
+      <a href="assets/cv_game_design.pdf" target="_blank" rel="noopener">CV</a>
     </nav>
   </div>
 </header>
@@ -84,10 +63,14 @@
   </div>
 </section>
 
+<div class="wrap back-link-wrap">
+  <a class="back-link" href="index.html#jeux-video">← Retour à Jeux vidéo</a>
+</div>
+
 <section class="wrap entries">
 
   <article class="entry entry--concept">
-    <p class="entry-accent">Pitch</p>
+    <p class="entry-accent">01 — Vision</p>
     <h2>Une immortelle sans mémoire, un royaume qui brûle</h2>
     <p>1209, Languedoc. Une femme se réveille dans l'hospice d'un logis seigneurial, le corps marqué, la mémoire en lambeaux. Elle ne sait pas qui elle est. Elle sait seulement qu'elle devrait être morte.</p>
     <p>Elle s'appelle Aelya. Elle ne vieillit pas — non par magie, mais parce qu'elle descend d'une civilisation antédiluvienne qui a modifié son propre génome. Sa mémoire ne lui reviendra que par fragments : une plante reconnue, un lieu, un visage. Pendant ce temps, le monde autour d'elle brûle. L'Église s'apprête à exterminer les Cathares du Languedoc.</p>
@@ -95,13 +78,11 @@
   </article>
 
   <article class="entry entry--concept">
-    <p class="entry-accent">Fiche technique</p>
-    <h2>RPG d'action-exploration en Unreal Engine 5</h2>
-    <p>Vue à la troisième personne, caméra à l'épaule. Aelya marche, court, se bat à l'épée ou à l'arc, parle, fouille, se cache — un corps de femme du XIIIe siècle, pas une acrobate. Solo exclusivement, aucune dépendance réseau, achat unique premium sans monétisation in-game.</p>
-    <p class="entry-accent">Rôle</p>
+    <p class="entry-accent">02 — Mon rôle</p>
     <div class="entry-meta">
-      <span class="tag tag--role">Game Designer</span>
+      <span class="tag tag--role">Game Design</span>
     </div>
+    <p>Vue à la troisième personne, caméra à l'épaule. Aelya marche, court, se bat à l'épée ou à l'arc, parle, fouille, se cache — un corps de femme du XIIIe siècle, pas une acrobate. Solo exclusivement, aucune dépendance réseau, achat unique premium sans monétisation in-game.</p>
     <div class="entry-meta">
       <span class="tag">Unreal Engine 5</span>
       <span class="tag">PC (Steam)</span>
@@ -114,14 +95,7 @@
   </article>
 
   <article class="entry entry--concept">
-    <p class="entry-accent">Le dilemme moral</p>
-    <h2>A-t-elle le droit d'utiliser le mal contre le mal ?</h2>
-    <p>Chrones n'est pas un jeu sur l'immortalité. C'est un jeu sur ce que devient quelqu'un à qui on a tout pris et qui a le temps de se venger.</p>
-    <p>Cette question n'est pas un thème posé en préambule puis oublié : elle est mécanique. Chaque choix majeur déplace une jauge morale invisible qui façonne les dialogues disponibles, la fidélité des alliés, les capacités accessibles, et la fin de l'histoire.</p>
-  </article>
-
-  <article class="entry entry--concept">
-    <p class="entry-accent">Les piliers</p>
+    <p class="entry-accent">03 — Design pillars</p>
     <h2>Quatre piliers de gameplay</h2>
     <p><strong>La mémoire est le gameplay.</strong> Retrouver un souvenir est à la fois le moteur de l'histoire, la clé de progression et la récompense d'exploration — pas de mode perception qui surligne les objets : le joueur observe et fouille réellement.</p>
     <p><strong>Les choix ont un coût.</strong> Aucune décision n'est gratuite. Sauver quelqu'un attire l'attention, se cacher condamne d'autres, utiliser un pouvoir en public fait monter le risque d'être dénoncée.</p>
@@ -130,21 +104,29 @@
   </article>
 
   <article class="entry entry--concept">
-    <p class="entry-accent">Manette en main</p>
+    <p class="entry-accent">04 — Core gameplay loop</p>
     <h2>La boucle de jeu, en vingt minutes type</h2>
     <p><strong>Arriver</strong> dans une zone — nouvelle, ou changée par les années écoulées. <strong>Observer</strong> : repérer les gens à qui parler, les chemins, ce qui traîne, ce qui menace. <strong>Agir</strong> — dialogue, infiltration ou combat, les trois restent ouverts en permanence. <strong>Déclencher</strong> : un objet, un lieu ou un visage réveille une mémoire. <strong>Débloquer</strong> : la mémoire rend une capacité, une réplique décisive, ou une information sur le monde. <strong>Réutiliser</strong> : ce qui vient d'être débloqué ouvre une porte qui était fermée cinq minutes plus tôt.</p>
     <p>Le rythme alterne délibérément la tension et le vide. Après un siège vient une ville dévastée où il n'y a pas un ennemi vivant, et rien à faire sinon regarder. Ce contraste est un choix, pas un manque de contenu.</p>
   </article>
 
   <article class="entry entry--concept">
-    <p class="entry-accent">Direction artistique</p>
+    <p class="entry-accent">05 — Narrative Design</p>
+    <h2>A-t-elle le droit d'utiliser le mal contre le mal ?</h2>
+    <p>Chrones n'est pas un jeu sur l'immortalité. C'est un jeu sur ce que devient quelqu'un à qui on a tout pris et qui a le temps de se venger.</p>
+    <p>Cette question n'est pas un thème posé en préambule puis oublié : elle est mécanique. Chaque choix majeur déplace une jauge morale invisible qui façonne les dialogues disponibles, la fidélité des alliés, les capacités accessibles, et la fin de l'histoire.</p>
+  </article>
+
+  <article class="entry entry--concept">
+    <p class="entry-accent">06 — Direction artistique</p>
     <h2>Une dark fantasy historique sincère</h2>
     <p>Le Moyen Âge du jeu est sale, malade, violent et sincèrement croyant — la noirceur vient de l'époque avant de venir des créatures. Palette de pierre grise, de ciel de plomb et d'ocres brûlés. Le rouge est rare et signifiant. Aucun effet lumineux flottant, aucune rune brillante, aucune particule dorée : les créatures ne sont ni colorées ni spectaculaires, elles sont anatomiquement crédibles, mal éclairées, et ressemblent à des animaux pour lesquels personne n'a de nom.</p>
     <p>Ce que le jeu n'est pas : un monde ouvert à icônes, une fantasy générique, un jeu-service, un simulateur historique aride, ni un jeu où l'on gagne contre l'Histoire.</p>
-    <div class="entry-meta">
-      <span class="tag">Prototype à venir</span>
-      <span class="tag">En développement</span>
-    </div>
+  </article>
+
+  <article class="entry entry--concept">
+    <p class="entry-accent">07 — Prototype</p>
+    <p>Statut : Game Concept → Prototype en développement.</p>
   </article>
 
 </section>

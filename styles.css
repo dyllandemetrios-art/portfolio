@@ -290,7 +290,7 @@ img { max-width: 100%; display: block; }
 
 .section-lead {
   color: var(--bone-dim);
-  max-width: 72ch;
+  max-width: 100%;
   margin: 0 0 6px;
 }
 
@@ -298,10 +298,6 @@ img { max-width: 100%; display: block; }
   color: var(--brass);
   font-size: 0.9rem;
   margin: 0 0 20px;
-}
-
-.moodboard-pointer {
-  padding: 8px 0 40px;
 }
 
 .pillars a {

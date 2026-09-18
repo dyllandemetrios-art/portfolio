@@ -1,42 +1,32 @@
-# Portfolio Dyllan Démétrios
+# Dyllan Démétrios — Portfolio
 
-Site statique en HTML/CSS pur (aucune installation, aucune dépendance).
+[dyllandemetrios.vercel.app](https://dyllandemetrios.vercel.app)
 
-## 1. Avant de publier
+Site portfolio présentant mon travail de Game Designer et auteur : jeux vidéo (Unity, Unreal Engine), un jeu de plateau en conception, deux sagas romanesques, et un moodboard visuel synchronisé depuis Pinterest.
 
-- [ ] Dans `moodboard.html`, remplace `TON_PSEUDO` et `TON_BOARD` par l'URL de ton vrai board Pinterest (deux occurrences dans le bloc `data-pin-do`).
-- [ ] Dans `games.html`, vérifie les liens itch.io et ajoute d'autres jeux si besoin (copie un bloc `<article class="entry entry--game">…</article>`).
-- [ ] Dans `novels.html`, ajuste les pitchs si tu veux un ton différent pour le grand public (ceux-ci sont volontairement courts).
+## Stack
 
-## 2. Mettre le site sur GitHub
-
-1. Va sur [github.com](https://github.com), connecte-toi.
-2. Clique sur **New** pour créer un dépôt (ex. `portfolio`), en **Public**.
-3. Sur ta machine, dans le dossier de ces fichiers :
-   ```
-   git init
-   git add .
-   git commit -m "Site portfolio"
-   git branch -M main
-   git remote add origin https://github.com/TON_PSEUDO/portfolio.git
-   git push -u origin main
-   ```
-   (ou glisse-dépose les 5 fichiers directement dans l'interface GitHub via "Add file → Upload files", sans ligne de commande).
-
-## 3. Déployer sur Vercel (gratuit)
-
-1. Va sur [vercel.com](https://vercel.com), connecte-toi avec GitHub.
-2. **Add New → Project**, sélectionne ton dépôt `portfolio`.
-3. Framework Preset : choisis **"Other"** (c'est un site statique, pas du Next.js).
-4. **Deploy**.
-5. Ton site est en ligne à une adresse du type `https://portfolio-xxxx.vercel.app`. Tu peux ensuite brancher un nom de domaine perso depuis les réglages du projet Vercel si tu en as un.
+HTML5 / CSS3 pur, JavaScript vanilla minimal (embed Pinterest). Aucun framework, aucune dépendance, aucun build — déployé tel quel sur Vercel à chaque push sur `main`.
 
 ## Structure
 
 ```
-index.html       accueil
-games.html       jeux (Unity / Unreal)
-novels.html      romans (Chrones, Anandavīra)
-moodboard.html   board Pinterest en direct
-styles.css       tout le style du site
+index.html                 accueil
+games.html                 jeux vidéo (Unity, Unreal Engine)
+boardgames.html             jeux de société
+boardgames/francia.html     Francia — jeu de plateau coopératif
+novels.html                 romans
+novels/immarcescible.html   dark fantasy
+novels/anandavira.html      space opera
+novels/coeurs-miroirs.html  recueil de poésie
+concept-chrones.html        game concept détaillé (Chrones)
+moodboard.html               références visuelles (Pinterest)
+apropos.html                 parcours et contact
+styles.css                   feuille de style unique
+assets/                      images, favicon, CV
+robots.txt, sitemap.xml      référencement
 ```
+
+## Contact
+
+[dyllandemetrios@gmail.com](mailto:dyllandemetrios@gmail.com) · [LinkedIn](https://www.linkedin.com/in/dylan-boiteux/) · [GitHub](https://github.com/dyllandemetrios-art)

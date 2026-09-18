@@ -313,6 +313,11 @@ img { max-width: 100%; display: block; }
   border-radius: 2px;
 }
 
+.tag--role {
+  color: var(--accent, var(--brass));
+  border-color: var(--accent, var(--brass));
+}
+
 .entry-link {
   color: var(--accent, var(--brass));
   font-size: 0.95rem;
@@ -437,6 +442,16 @@ img { max-width: 100%; display: block; }
   font-size: 0.92rem;
   line-height: 1.45;
   margin: 0 0 12px;
+}
+
+.project-card-overlay p.project-card-role {
+  font-size: 0.75rem;
+  color: var(--accent, var(--brass));
+  margin: 0 0 4px;
+}
+
+.project-card-overlay .entry-meta + .entry-meta {
+  margin-top: 8px;
 }
 
 .project-card-overlay .entry-meta { margin-top: 0; }

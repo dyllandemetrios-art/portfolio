@@ -13,6 +13,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://dyllandemetrios.vercel.app/games/robot-clean.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dyllandemetrios.vercel.app/games/eden-snake.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dyllandemetrios.vercel.app/games/solarpunk-sky-garden.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://dyllandemetrios.vercel.app/boardgames.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>

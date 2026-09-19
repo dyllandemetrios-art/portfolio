@@ -86,21 +86,15 @@
   <article class="entry entry--game">
     <p class="entry-accent">Pitch</p>
     <p>Robot Clean est un infinite runner 3D où vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué. Collectez des déchets pour survivre, récupérez des composants électroniques pour améliorer votre cœur artificiel, et esquivez les obstacles alors que le monde s'accélère autour de vous.</p>
-    <p>Projet réalisé en équipe avec plusieurs game designers, dans le cadre de ma formation à Gaming Campus.</p>
+    <p>Projet réalisé en équipe avec plusieurs game designers, dans le cadre de ma formation à Gaming Campus. Jeu terminé et jouable, à la différence de Chrones qui en est encore au stade Game Concept.</p>
+  </article>
+
+  <article class="entry entry--game">
     <p class="entry-accent">Mon rôle</p>
     <div class="entry-meta">
-      <span class="tag tag--role">Technical Game Design</span>
       <span class="tag tag--role">Gameplay Programming</span>
+      <span class="tag tag--role">Systems Design</span>
     </div>
-  </article>
-
-  <article class="entry entry--game">
-    <p class="entry-accent">Contrôles</p>
-    <p>Flèches ou ZQSD pour changer de voie et glisser, Espace pour sauter, Échap pour mettre en pause.</p>
-  </article>
-
-  <article class="entry entry--game">
-    <p class="entry-accent">Ce que j'ai conçu / contribué à concevoir</p>
     <p><strong>Boucle de gameplay</strong> : machine à états gérant proprement le déroulement du jeu à travers les états Compte à rebours, Gameplay et Game Over.</p>
     <p><strong>Progression</strong> : arbre de compétences à 5 branches modifiant des paramètres en temps réel (PV, drain, armure, invincibilité, soin), avec sérialisation persistante des compétences, meilleurs scores et économie de composants d'une session à l'autre.</p>
     <p><strong>Génération des segments</strong> : génération procédurale pondérée, avec distribution de difficulté configurable.</p>
@@ -109,8 +103,13 @@
   </article>
 
   <article class="entry entry--game">
+    <p class="entry-accent">Contrôles</p>
+    <p>Flèches ou ZQSD pour changer de voie et glisser, Espace pour sauter, Échap pour mettre en pause.</p>
+  </article>
+
+  <article class="entry entry--game">
     <p class="entry-accent">Implémentation</p>
-    <p>Architecture événementielle via un bus d'événements statique éliminant les dépendances directes entre managers, détection de collision sphérique personnalisée avec filtrage par tag pour distinguer obstacles et objets à collecter, détection du sol dynamique par raycast pour un atterrissage précis après un saut, gestion audio centralisée avec changement automatique de musique selon l'état du jeu, sérialisation JSON pour la persistance.</p>
+    <p>La programmation sert directement les systèmes ci-dessus : architecture événementielle via un bus d'événements statique éliminant les dépendances directes entre managers, détection de collision sphérique personnalisée avec filtrage par tag pour distinguer obstacles et objets à collecter, détection du sol dynamique par raycast pour un atterrissage précis après un saut, gestion audio centralisée avec changement automatique de musique selon l'état du jeu, sérialisation JSON pour la persistance.</p>
     <div class="entry-meta">
       <span class="tag">Unity</span>
       <span class="tag">C#</span>

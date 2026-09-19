@@ -86,6 +86,7 @@
   <article class="entry entry--game">
     <p class="entry-accent">Pitch</p>
     <p>Voici Nestor, un drone vétéran de guerre. Fatigué du combat, Nestor mérite la paix maintenant, mais il va découvrir combien l'agriculture peut être difficile pour un robot. Aidez-le à faire pousser et récolter des carottes avant qu'elles n'explosent. Gérez le niveau de batterie, la réserve d'eau et de bois. Une fin de partie existe pour les joueurs les plus tenaces.</p>
+    <p>Premier projet Unity : un prototype d'apprentissage qui pose les bases avant Robot Clean et Eden Snake.</p>
     <p class="entry-accent">Mon rôle</p>
     <div class="entry-meta">
       <span class="tag tag--role">Gameplay Programming</span>
@@ -100,18 +101,17 @@
 
   <article class="entry entry--game">
     <p class="entry-accent">Contributions</p>
-
-    <p class="entry-accent">Gameplay</p>
     <div class="entry-meta">
       <span class="tag">Déplacement</span>
       <span class="tag">Collecte</span>
       <span class="tag">Plantation</span>
-      <span class="tag">Ressources</span>
+      <span class="tag">Gestion des ressources</span>
       <span class="tag">Batterie</span>
       <span class="tag">Ravitaillement</span>
     </div>
-    <p>Nestor ne peut transporter du bois et de l'eau qu'en quantité limitée : il faut trouver un point de ravitaillement sur la carte. Le drone a aussi besoin de batterie, avec un point de recharge pour utiliser le boost de vitesse.</p>
+  </article>
 
+  <article class="entry entry--game">
     <p class="entry-accent">Systèmes</p>
     <div class="entry-meta">
       <span class="tag">Météo</span>
@@ -119,19 +119,21 @@
       <span class="tag">Gestion des ressources</span>
       <span class="tag">Cycle jour/nuit</span>
     </div>
-    <p>Cycle météo (jour, nuit, brouillard) : la pluie accélère la pousse des carottes, la neige la ralentit.</p>
+    <p>Les systèmes interagissent entre eux : la pluie accélère la pousse des carottes, la neige la ralentit ; le bois et l'eau se transportent en quantité limitée, ce qui oblige à trouver un point de ravitaillement sur la carte ; la batterie se consomme et conditionne l'accès au boost de vitesse, rechargeable à un point dédié.</p>
+  </article>
 
+  <article class="entry entry--game">
     <p class="entry-accent">Technique</p>
     <div class="entry-meta">
       <span class="tag">Unity</span>
       <span class="tag">C#</span>
+      <span class="tag">Prefabs / Assets</span>
       <span class="tag">Input System</span>
       <span class="tag">Collisions</span>
       <span class="tag">Particules</span>
       <span class="tag">UI</span>
     </div>
-    <p>Choix d'assets gratuits pour développer le lore et le gameplay en lien avec le document de game design ; gestion des collisions et triggers (quel game object doit être trigger ou non, pourquoi tel objet n'est pas détecté par le prefab) ; système de particules avec ajustement de couleur, taille, timing ; recherche d'assets audio et UI gratuits de qualité.</p>
-
+    <p>Choix d'assets gratuits pour développer le lore et le gameplay en lien avec le document de game design ; instanciation de prefabs en jeu et contrôles clavier/manette via l'Input System ; gestion des collisions et triggers (quel game object doit être trigger ou non, pourquoi tel objet n'est pas détecté par le prefab) ; système de particules avec ajustement de couleur, taille, timing ; recherche d'assets audio et UI gratuits de qualité.</p>
     <a class="entry-link" href="https://demetrios-games.itch.io/solarpunk-garden" target="_blank" rel="noopener">Jouer sur itch.io →</a>
   </article>
 

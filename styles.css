@@ -463,9 +463,9 @@ img { max-width: 100%; display: block; }
 
 .entry--game { --accent: var(--ember); }
 .entry--novel-chrones { --accent: var(--brass); }
-.entry--novel-anandavira { --accent: var(--violet); }
+.entry--novel-anandavira { --accent: var(--brass); }
 .entry--poetry { --accent: var(--ember); }
-.entry--boardgame { --accent: var(--brass); }
+.entry--boardgame { --accent: var(--violet); }
 .entry--concept { --accent: var(--brass); }
 
 /* ---------- project grid (hover cards) ---------- */
@@ -529,6 +529,24 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
+.project-card-badge {
+  position: absolute;
+  left: 18px;
+  bottom: 16px;
+  font-size: 0.72rem;
+  color: var(--accent, var(--brass));
+  border: 1px solid var(--accent, var(--brass));
+  background: rgba(18, 16, 14, 0.78);
+  padding: 4px 10px;
+  border-radius: 2px;
+  transition: opacity 0.25s ease;
+}
+
+.project-card:hover .project-card-badge,
+.project-card:focus-visible .project-card-badge {
+  opacity: 0;
+}
+
 .project-card-overlay {
   position: absolute;
   inset: 0;
@@ -580,9 +598,9 @@ img { max-width: 100%; display: block; }
 .project-card-overlay .entry-meta { margin-top: 0; }
 
 .project-card--game { --accent: var(--ember); }
-.project-card--boardgame { --accent: var(--brass); }
+.project-card--boardgame { --accent: var(--violet); }
 .project-card--novel-chrones { --accent: var(--brass); }
-.project-card--novel-anandavira { --accent: var(--violet); }
+.project-card--novel-anandavira { --accent: var(--brass); }
 .project-card--poetry { --accent: var(--ember); }
 
 .project-secondary-link {
@@ -664,8 +682,8 @@ img { max-width: 100%; display: block; }
   margin: 0 0 28px;
 }
 
-.board-group--anandavira { --accent: var(--violet); }
-.board-group--francia { --accent: var(--ember); }
+.board-group--anandavira { --accent: var(--brass); }
+.board-group--francia { --accent: var(--violet); }
 .board-group--immarcescible { --accent: var(--brass); }
 
 .board-block {

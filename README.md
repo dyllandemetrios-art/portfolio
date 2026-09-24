@@ -14,7 +14,7 @@ HTML5 / CSS3 pur, JavaScript vanilla minimal (embed Pinterest). Aucun framework,
 index.html                  accueil + section "Mes projets" (jeux vidéo,
                              jeux de société, écriture) organisée par
                              catégorie, avec ancres de navigation
-concept-chrones.html         game concept détaillé (Chrones)
+concept-chrones.html         game concept détaillé (Amarante)
 games/robot-clean.html       fiche projet — infinite runner Unity
 games/eden-snake.html        fiche projet — arcade narratif Unity
 games/solarpunk-sky-garden.html  fiche projet — gestion & simulation Unity

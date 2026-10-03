@@ -18,6 +18,7 @@ concept-chrones.html         game concept détaillé (Amarante)
 games/robot-clean.html       fiche projet — infinite runner Unity
 games/eden-snake.html        fiche projet — arcade narratif Unity
 games/solarpunk-sky-garden.html  fiche projet — gestion & simulation Unity
+games/francia-souls-like.html    fiche projet — prototype de combat UE5
 boardgames/francia.html      Francia — jeu de plateau coopératif
 novels/immarcescible.html    dark fantasy
 novels/anandavira.html       space opera

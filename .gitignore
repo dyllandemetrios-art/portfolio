@@ -1,1 +1,4 @@
 .claude/
+
+# Sources bureautiques : seuls les PDF exportes sont publies
+*.pptx

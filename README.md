@@ -2,7 +2,7 @@
 
 [dyllandemetrios.vercel.app](https://dyllandemetrios.vercel.app)
 
-Site portfolio de Game Designer : prototypes jeux vidéo (Unity, Unreal Engine), un jeu de plateau en conception, des univers narratifs (romans, worldbuilding), et un moodboard visuel synchronisé depuis Pinterest.
+Site portfolio de Game Designer : prototypes jeux vidéo (Unity, Unreal Engine), un jeu de plateau en conception, des univers narratifs (romans, worldbuilding).
 
 ## Stack
 
@@ -22,7 +22,6 @@ games/francia-souls-like.html    fiche projet — prototype de combat UE5
 boardgames/francia.html      Francia — jeu de plateau coopératif
 novels/immarcescible.html    dark fantasy
 novels/anandavira.html       space opera
-moodboard.html                références visuelles (Pinterest)
 apropos.html                  parcours et contact
 styles.css                    feuille de style unique
 assets/                       images, favicon, CV

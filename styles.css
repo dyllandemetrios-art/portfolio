@@ -857,3 +857,55 @@ img { max-width: 100%; display: block; }
 @media (max-width: 760px) {
   .pdf-embed iframe { height: 60vh; }
 }
+
+/* ---------- tableau de controles ---------- */
+
+.controls {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 4px;
+  font-size: 0.92rem;
+}
+
+.controls th {
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent, var(--brass));
+  padding: 0 14px 8px 0;
+  border-bottom: 1px solid var(--stone);
+}
+
+.controls td {
+  padding: 10px 14px 10px 0;
+  border-bottom: 1px solid var(--stone);
+  vertical-align: top;
+  color: var(--bone-dim);
+}
+
+.controls td:first-child { color: var(--bone); }
+.controls th:last-child,
+.controls td:last-child { padding-right: 0; }
+.controls tr:last-child td { border-bottom: none; }
+
+.key {
+  display: inline-block;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--bone);
+  background: var(--ink-raised);
+  border: 1px solid var(--stone);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin: 2px 4px 2px 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .controls { font-size: 0.85rem; }
+  .controls th, .controls td { padding-right: 10px; }
+  .key { font-size: 0.72rem; padding: 1px 5px; margin-right: 3px; }
+}

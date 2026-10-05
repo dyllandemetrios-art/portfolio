@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>An Astral Story : Ashar — Dyllan Démétrios</title>
-<meta name="description" content="Shoot'em up narratif sous Unity 6 : évadé de Phobos IX, un pilote hybride force le blocus de Mars sous le feu de LEASH, le geôlier automate.">
+<meta name="description" content="Shoot'em up narratif sous Unity 6 : Kaal'varis Dorn mène les Exilés d'Ashar hors de la prison de Phobos IX. Démo jouable, dix minutes.">
 <link rel="canonical" href="https://dyllandemetrios.vercel.app/games/an-astral-story-ashar.html">
 
 <link rel="icon" href="../assets/favicon.ico" sizes="any">
@@ -19,13 +19,13 @@
 <meta property="og:site_name" content="Dyllan Démétrios">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="An Astral Story : Ashar — Dyllan Démétrios">
-<meta property="og:description" content="Shoot'em up narratif sous Unity 6 : évadé de Phobos IX, un pilote hybride force le blocus de Mars sous le feu de LEASH, le geôlier automate.">
+<meta property="og:description" content="Shoot'em up narratif sous Unity 6 : Kaal'varis Dorn mène les Exilés d'Ashar hors de la prison de Phobos IX. Démo jouable, dix minutes.">
 <meta property="og:url" content="https://dyllandemetrios.vercel.app/games/an-astral-story-ashar.html">
-<meta property="og:image" content="https://dyllandemetrios.vercel.app/assets/images/og-default.jpg">
+<meta property="og:image" content="https://dyllandemetrios.vercel.app/assets/images/projects/ashar.jpeg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="An Astral Story : Ashar — Dyllan Démétrios">
-<meta name="twitter:description" content="Shoot'em up narratif sous Unity 6 : évadé de Phobos IX, un pilote hybride force le blocus de Mars sous le feu de LEASH, le geôlier automate.">
-<meta name="twitter:image" content="https://dyllandemetrios.vercel.app/assets/images/og-default.jpg">
+<meta name="twitter:description" content="Shoot'em up narratif sous Unity 6 : Kaal'varis Dorn mène les Exilés d'Ashar hors de la prison de Phobos IX. Démo jouable, dix minutes.">
+<meta name="twitter:image" content="https://dyllandemetrios.vercel.app/assets/images/projects/ashar.jpeg">
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -86,95 +86,102 @@
 
   <article class="entry entry--game">
     <p class="entry-accent">Pitch</p>
-    <p>Évadé de Phobos IX, un pilote hybride fuit l’orbite de Mars sous le feu de LEASH, le geôlier automate. Un shoot’em up à défilement vertical où le risque est la ressource : frôler les tirs recharge l’arme qui permet de reprendre le contrôle.</p>
-    <p>Ashar est un spin-off de la saga romanesque Anandavīra, conçu comme une porte d’entrée dans cet univers.</p>
+    <p>Vous incarnez Kaal’varis Dorn, ancien soldat pléiadien augmenté de force et emprisonné par le Culte. Après avoir volé un chasseur de l’Assemblée Terrienne, il mène les Exilés d’Ashar hors du complexe pénitentiaire de Phobos IX, puis à travers la surface de Mars.</p>
+    <p>Patrouilles de l’Assemblée, boss à phases, pilotes pléiadiens à libérer et croiseur de la commandante Amara Solvik à protéger : l’objectif tient en une ligne — survivre à l’évasion et mener les Exilés jusqu’à la liberté.</p>
+    <p>Démo gratuite et jouable, environ dix minutes, en navigateur ou sous Windows.</p>
     <p class="entry-accent">Rôles</p>
     <div class="entry-meta">
       <span class="tag tag--role">Game Design</span>
       <span class="tag tag--role">Narrative Design</span>
+      <span class="tag tag--role">Gameplay Programming</span>
     </div>
-    <p>Projet en conception : le game concept est rédigé, la démo de deux missions reste à produire.</p>
+    <div class="entry-meta">
+      <span class="tag">Combat Design</span>
+      <span class="tag">Game feel</span>
+      <span class="tag">Level Design</span>
+      <span class="tag">Data-Driven Design</span>
+      <span class="tag">Accessibilité</span>
+      <span class="tag">Gestion de production</span>
+    </div>
+    <p>Quatrième projet Unity : relier des intentions de design à des systèmes concrets et testables.</p>
   </article>
 
   <article class="entry entry--game">
     <p class="entry-accent">Univers</p>
-    <h2>La révolte d’Ashar, 2176–2183</h2>
-    <p>L’Assemblée Terrienne et le Consortium Minier Martien exploitent la Lune et Mars. À Phobos IX, dissidents et Ashar — un peuple hybride pléiado-terrien déclaré infidèle par le Culte — sont augmentés de force et réduits à des outils d’extraction.</p>
-    <p>Kaal’varis Dorn, hybride terrien-taygetien et ancien messager du Conseil pléiadien, rallie les exilés et vole un vaisseau de l’Assemblée. Face à lui, LEASH : un assistant de ferme devenu geôlier automate, qui verrouille l’orbite de Mars.</p>
-    <p>La question que pose le jeu : que reste-t-il de libre arbitre face à un système qui contrôle les machines, les corps et les récits ?</p>
+    <h2>La révolte d’Ashar</h2>
+    <p>Ashar est un spin-off de l’univers du roman Anandavīra, situé pendant sa préquelle, <em>Les Exilés d’Ashar</em>. Le jeu fait entrer dans cet univers par ses environnements et ses conversations radio, sans dévoiler les révélations des romans.</p>
+    <p>À Phobos IX, le Culte augmente de force les dissidents et les Ashar, peuple hybride pléiado-terrien, pour en faire des outils. Kaal’varis en sort, et son évasion devient le point de départ d’une résistance.</p>
   </article>
 
   <article class="entry entry--game">
     <p class="entry-accent">Game Design</p>
-    <p><strong>Le risque recharge la révolte.</strong> Chaque projectile frôlé rapporte des points et recharge l’impulsion de piratage. Plus le joueur pilote au ras des tirs, plus vite il reprend le contrôle — mais la hitbox létale n’est qu’à quelques pixels.</p>
-    <p><strong>Pirater plutôt que détruire.</strong> L’impulsion retourne les drones de LEASH en alliés, qui tombent après trois impacts. Elle étourdit les chasseurs, mais reste sans effet sur les boss.</p>
-    <p><strong>Une difficulté portée par le level design.</strong> Un HUD simple, pas de modes séparés : c’est la composition des vagues qui calibre la courbe.</p>
+    <p><strong>Combat Design.</strong> Des rôles d’ennemis distincts, des motifs d’attaque lisibles, des zones de danger identifiables au premier regard, et des boss à phases dont chaque télégraphie laisse une route sûre.</p>
+    <p><strong>Game feel.</strong> Déplacement et visée indépendants, visée à 360 degrés avec lissage au stick, capacités réactives — bouclier temporaire, dash et EMP — dont le temps de recharge est rendu visible.</p>
+    <p><strong>Data-Driven Design.</strong> Ennemis, vagues, dialogues, capacités et phases de boss sont configurés en ScriptableObjects plutôt qu’écrits en dur : chaque équilibrage se fait sans toucher au code.</p>
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Boucle de jeu</p>
-    <p>Une mission dure cinq à huit minutes : décoller sur un briefing court, survivre aux vagues, frôler les tirs pour recharger l’impulsion, pirater, souffler le temps d’un dialogue entre deux vagues, puis briser un boss à phases qui ouvre une entrée de codex.</p>
-    <p>À l’échelle de la seconde : lire le motif, frôler, voir l’impulsion se recharger, pirater ou riposter. À l’échelle de la saga : chaque codex éclaire l’origine des Exilés, que le lecteur retrouve dans le roman.</p>
+    <p class="entry-accent">Level Design</p>
+    <p>Un trajet continu plutôt qu’une suite de niveaux : la station pénitentiaire, puis une colonie martienne habitée, puis l’atmosphère, puis l’espace ouvert. Le décor raconte la distance parcourue.</p>
   </article>
 
   <article class="entry entry--game">
     <p class="entry-accent">Narrative Design</p>
-    <p>La narration tient dans des bulles de dialogue qui suspendent l’action entre deux vagues, et dans un codex consultable après la mission. Le récit se tisse sans casser le rythme arcade : pendant un dialogue, la touche de tir fait défiler la bulle.</p>
-    <p>Le codex raconte l’origine des Exilés d’Ashar sans dévoiler les révélations du roman.</p>
-  </article>
-
-  <article class="entry entry--game">
-    <p class="entry-accent">La démo</p>
-    <h2>Deux missions, vingt à trente minutes</h2>
-    <p><strong>Phobos IX, « La Chienne Rouge ».</strong> Le défilement monte du hangar vers la surface, puis vers l’espace : tunnels et drones de garde, dômes et satellites sentinelles, trois tourelles à plasma comme trois verrous, puis une navette de garde en mini-boss.</p>
-    <p><strong>La course hors de Mars.</strong> Orbite martienne puis champ de débris : chasseurs et intercepteurs, satellites à désactiver, et LEASH en boss, qui enchaîne ses drones avant de les libérer à tête chercheuse. À la fin, le message crypté des Exilés part sur le réseau.</p>
+    <p>Les conversations radio se placent entre les affrontements, jamais pendant. Un état de dialogue suspend toute menace tout en laissant le monde et la musique continuer : on souffle sans sortir du voyage.</p>
   </article>
 
   <article class="entry entry--game">
     <p class="entry-accent">Contrôles</p>
-    <h2>Clavier, ou manette</h2>
-    <p>En AZERTY, ZQSD et les flèches sont actifs en permanence. À la manette, tout tient sur les boutons de façade, gâchettes inutilisées, par convention shmup.</p>
+    <h2>Clavier et souris, ou manette</h2>
+    <p>La visée est indépendante du déplacement : on recule en continuant de tirer dans l’autre sens.</p>
     <table class="controls">
       <thead>
-        <tr><th>Action</th><th>Clavier</th><th>Manette</th></tr>
+        <tr><th>Action</th><th>Clavier et souris</th><th>Manette</th></tr>
       </thead>
       <tbody>
-        <tr><td>Se déplacer</td><td><span class="key">Z</span> <span class="key">Q</span> <span class="key">S</span> <span class="key">D</span> ou <span class="key">↑</span> <span class="key">↓</span> <span class="key">←</span> <span class="key">→</span></td><td><span class="key">Stick gauche</span> ou <span class="key">Croix directionnelle</span></td></tr>
-        <tr><td>Tir principal (maintenir)</td><td><span class="key">Espace</span></td><td><span class="key">A</span></td></tr>
-        <tr><td>Bouclier éphémère</td><td><span class="key">Maj</span></td><td><span class="key">X</span></td></tr>
-        <tr><td>Impulsion de piratage</td><td><span class="key">Ctrl</span></td><td><span class="key">Y</span></td></tr>
-        <tr><td>Dash, esquive</td><td><span class="key">F</span></td><td><span class="key">B</span></td></tr>
-        <tr><td>Codex (hors action)</td><td><span class="key">Tab</span></td><td><span class="key">View</span></td></tr>
-        <tr><td>Valider (menus)</td><td><span class="key">Entrée</span></td><td>—</td></tr>
+        <tr><td>Se déplacer</td><td><span class="key">Z</span> <span class="key">Q</span> <span class="key">S</span> <span class="key">D</span></td><td><span class="key">Stick gauche</span> ou <span class="key">Croix directionnelle</span></td></tr>
+        <tr><td>Viser</td><td><span class="key">Souris</span></td><td><span class="key">Stick droit</span></td></tr>
+        <tr><td>Tirer</td><td><span class="key">Clic gauche</span></td><td><span class="key">RT</span></td></tr>
+        <tr><td>Dash</td><td><span class="key">Clic droit</span></td><td><span class="key">LT</span></td></tr>
+        <tr><td>Bouclier</td><td><span class="key">Maj</span></td><td><span class="key">X</span></td></tr>
+        <tr><td>EMP</td><td><span class="key">Ctrl</span></td><td><span class="key">Y</span></td></tr>
+        <tr><td>Faire défiler un dialogue</td><td><span class="key">Espace</span></td><td><span class="key">A</span></td></tr>
+        <tr><td>Valider (menus)</td><td><span class="key">Entrée</span></td><td><span class="key">A</span></td></tr>
         <tr><td>Pause</td><td><span class="key">Échap</span></td><td><span class="key">Menu</span></td></tr>
       </tbody>
     </table>
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Direction artistique</p>
-    <p>Sombre, mystique, carcéral : du pixel art 48×48 sur fond de dark synthwave. La lisibilité prime — trois couleurs de projectiles au plus par phase de boss, et un Mars toujours atténué, jamais en aplat rouge sous les tirs.</p>
-    <p>Côté son, des bruitages de dialogue 16-bit avec un timbre par personnage, et une voix off filtrée radio sur les répliques clés.</p>
+    <p class="entry-accent">Implémentation</p>
+    <p>Unity 6 avec Universal Render Pipeline et rendu 2D Pixel Perfect. L’Input System gère des contrôles contextuels clavier, souris et manette. S’y ajoutent le séquençage des vagues et des boss piloté par les données, les points de contrôle, la pause, l’écran de Game Over, des réglages persistants, des transitions musicales par section, et des builds Windows et WebGL.</p>
+    <p>Le jeu est intégralement disponible en français et en anglais : menus, tutoriels et dialogues.</p>
     <div class="entry-meta">
       <span class="tag">Unity 6 (URP)</span>
       <span class="tag">C#</span>
-      <span class="tag">Ink</span>
-      <span class="tag">Pixel art 48×48</span>
-      <span class="tag">Pixel Perfect</span>
+      <span class="tag">2D Pixel Perfect</span>
+      <span class="tag">Input System</span>
+      <span class="tag">ScriptableObjects</span>
+      <span class="tag">WebGL</span>
     </div>
   </article>
 
   <article class="entry entry--game">
+    <p class="entry-accent">Production assistée par IA</p>
+    <p>Des outils d’IA ont servi à l’implémentation du code, à la documentation technique, à l’itération et à la gestion de production. La direction créative, le game design, les décisions narratives, la sélection des assets, les playtests et la validation finale restent humains.</p>
+  </article>
+
+  <article class="entry entry--game">
     <p class="entry-accent">Game concept</p>
-    <h2>Le document complet, en treize pages</h2>
-    <p>Fiche signalétique, univers et problématique, piliers, boucles de gameplay, découpage des deux missions, contrôles, conditions de victoire et de défaite, positionnement et direction artistique.</p>
+    <h2>Le document de conception initial</h2>
+    <p>Treize pages rédigées avant la production : univers, piliers, boucles, découpage des missions, conditions de victoire et direction artistique. La démo publiée s’en écarte sur plusieurs points — notamment les contrôles et la structure — et le document garde donc la trace des intentions de départ.</p>
     <div class="pdf-embed">
       <iframe src="../assets/game-concept-ashar.pdf#view=FitH" title="An Astral Story : Ashar — game concept, document PDF de treize pages" loading="lazy"></iframe>
     </div>
     <p class="pdf-fallback">L’affichage intégré ne fonctionne pas sur tous les mobiles.</p>
     <div class="entry-links">
-      <a class="entry-link" href="../assets/game-concept-ashar.pdf" target="_blank" rel="noopener">Télécharger le PDF →</a>
-      <a class="entry-link" href="https://demetrios-games.itch.io/an-astral-story-ashar" target="_blank" rel="noopener">Voir sur itch.io →</a>
+      <a class="entry-link" href="https://demetrios-games.itch.io/an-astral-story-ashar" target="_blank" rel="noopener">Jouer sur itch.io →</a>
+      <a class="entry-link" href="../assets/game-concept-ashar.pdf" target="_blank" rel="noopener">Télécharger le game concept →</a>
     </div>
   </article>
 

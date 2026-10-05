@@ -15,6 +15,7 @@ index.html                  accueil + section "Mes projets" (jeux vidéo,
                              jeux de société, écriture) organisée par
                              catégorie, avec ancres de navigation
 concept-chrones.html         game concept détaillé (Amarante)
+games/an-astral-story-ashar.html  fiche projet — shoot’em up narratif Unity 6
 games/robot-clean.html       fiche projet — infinite runner Unity
 games/eden-snake.html        fiche projet — arcade narratif Unity
 games/solarpunk-sky-garden.html  fiche projet — gestion & simulation Unity

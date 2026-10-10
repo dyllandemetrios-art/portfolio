@@ -954,7 +954,7 @@ h3.entry-accent {
   margin: 0;
 }
 
-/* ---------- actions du hero ---------- */
+/* ---------- note du hero ---------- */
 
 .hero .hero-note {
   color: var(--bone-dim);
@@ -962,47 +962,10 @@ h3.entry-accent {
   margin-top: 10px;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 26px;
-}
-
-.button {
-  display: inline-block;
-  font-size: 0.92rem;
-  color: var(--bone);
-  border: 1px solid var(--stone);
-  border-radius: 2px;
-  padding: 11px 20px;
-  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
-}
-
-.button:hover,
-.button:focus-visible {
-  border-color: var(--brass);
-  color: var(--brass);
-}
-
-.button--primary {
-  border-color: var(--brass);
-  color: var(--ink);
-  background: var(--brass);
-}
-
-.button--primary:hover,
-.button--primary:focus-visible {
-  background: transparent;
-  color: var(--brass);
-}
-
 @media (max-width: 700px) {
   .hero { padding: 48px 0 44px; }
   .hero h1 { margin-bottom: 16px; }
   .hero .hero-signature { margin-top: 22px; }
-  .hero-actions { gap: 10px; margin-top: 22px; }
-  .button { padding: 11px 16px; }
 }
 
 /* ---------- liseuse : liste a gauche, document a droite ---------- */

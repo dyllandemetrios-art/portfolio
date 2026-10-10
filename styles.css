@@ -518,7 +518,7 @@ img { max-width: 100%; display: block; }
 .project-card-badge {
   position: absolute;
   left: 14px;
-  bottom: 14px;
+  top: 14px;
   font-size: 0.72rem;
   color: var(--accent, var(--brass));
   border: 1px solid var(--accent, var(--brass));
@@ -954,14 +954,6 @@ h3.entry-accent {
   margin: 0;
 }
 
-/* ---------- note du hero ---------- */
-
-.hero .hero-note {
-  color: var(--bone-dim);
-  font-size: 0.95rem;
-  margin-top: 10px;
-}
-
 @media (max-width: 700px) {
   .hero { padding: 48px 0 44px; }
   .hero h1 { margin-bottom: 16px; }
@@ -1045,7 +1037,7 @@ h3.entry-accent {
 .reader-view iframe {
   display: block;
   width: 100%;
-  height: 78vh;
+  height: 86vh;
   border: 1px solid var(--stone);
   border-radius: 2px;
   background: var(--ink-raised);
@@ -1067,24 +1059,15 @@ h3.entry-accent {
 .pdf-direct { margin: 16px 0 0; }
 .pdf-direct + .pdf-embed { margin-top: 12px; }
 
-/* ---------- bouton de chargement des tableaux Pinterest ---------- */
+/* ---------- page Ecriture : la liseuse prend toute la largeur utile ---------- */
 
-.moodboard-load {
-  display: block;
-  width: 100%;
-  font-family: var(--sans);
-  font-size: 0.9rem;
-  color: var(--bone-dim);
-  background: var(--ink-raised);
-  border: 1px dashed var(--stone);
-  border-radius: 2px;
-  padding: 22px 16px;
-  cursor: pointer;
-  transition: border-color 0.15s ease, color 0.15s ease;
+.wrap--reader {
+  max-width: 1680px;
 }
 
-.moodboard-load:hover,
-.moodboard-load:focus-visible {
-  border-color: var(--accent, var(--brass));
-  color: var(--accent, var(--brass));
+@media (min-width: 1100px) {
+  .wrap--reader .reader {
+    grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+    gap: 32px;
+  }
 }

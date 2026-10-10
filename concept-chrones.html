@@ -246,36 +246,6 @@
   </div>
 </footer>
 
-<script>
-  // Les tableaux Pinterest ne sont charges qu'a la demande : le script tiers
-  // n'est injecte qu'au premier clic. Sans JavaScript, chaque bloc reste un
-  // lien direct vers le tableau.
-  (function () {
-    var zones = document.querySelectorAll('.moodboard-embed');
-    if (!zones.length) return;
-    var charge = false;
-
-    function chargerPinterest() {
-      if (charge) return;
-      charge = true;
-      Array.prototype.forEach.call(document.querySelectorAll('.moodboard-load'), function (b) {
-        b.remove();
-      });
-      var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://assets.pinterest.com/js/pinit.js';
-      document.body.appendChild(s);
-    }
-
-    Array.prototype.forEach.call(zones, function (zone) {
-      var bouton = document.createElement('button');
-      bouton.type = 'button';
-      bouton.className = 'moodboard-load';
-      bouton.textContent = 'Afficher le tableau Pinterest';
-      bouton.addEventListener('click', chargerPinterest);
-      zone.insertBefore(bouton, zone.firstChild);
-    });
-  })();
-</script>
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>

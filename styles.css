@@ -23,6 +23,8 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  /* Les ancres ne doivent pas atterrir sous l en-tete fixe. */
+  scroll-padding-top: 150px;
 }
 
 body {
@@ -56,6 +58,10 @@ img { max-width: 100%; display: block; }
 /* ---------- header / nav ---------- */
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--ink);
   border-bottom: 1px solid var(--stone);
   padding: 22px 0;
 }
@@ -1070,4 +1076,22 @@ h3.entry-accent {
     grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
     gap: 32px;
   }
+}
+
+/* ---------- en-tete fixe : version compacte au defilement ---------- */
+
+@media (max-width: 700px) {
+  /* En fixe, l en-tete doit rester discret : on ne garde que le nom, le
+     metier et la navigation. Les liens itch.io et les reseaux restent
+     accessibles dans le pied de page. */
+  .site-header { padding: 12px 0; }
+  .site-header .wrap { gap: 6px; }
+  .site-nav { gap: 4px 18px; }
+  .site-header .site-role-sub { display: none; }
+  .site-header .header-links { display: none; }
+  html { scroll-padding-top: 228px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }

@@ -23,6 +23,7 @@ games/francia-souls-like.html    fiche projet — prototype de combat UE5
 boardgames/francia.html      Francia — jeu de plateau coopératif
 novels/immarcescible.html    dark fantasy
 novels/anandavira.html       space opera
+ecriture.html                 nouvelles et extraits, avec liseuse PDF
 apropos.html                  parcours et contact
 styles.css                    feuille de style unique
 assets/                       images, favicon, CV

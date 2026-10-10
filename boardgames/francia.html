@@ -31,6 +31,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
 <header class="site-header">
   <div class="wrap">
     <div class="site-brand">
@@ -43,7 +45,7 @@
         <a href="../index.html#projets" aria-current="page">Projets</a>
         <div class="nav-dropdown">
           <a href="../index.html#jeux">Jeux</a>
-          <a href="../index.html#prototypes">Prototypes</a>
+          <a href="../index.html#prototypes">Prototypes et concepts</a>
           <a href="../index.html#ecriture">Side Quests</a>
         </div>
       </span>
@@ -70,6 +72,7 @@
   </div>
 </header>
 
+<main id="contenu" tabindex="-1">
 <div class="wrap back-link-wrap">
   <a class="back-link" href="../index.html#ecriture">← Retour à Side Quests</a>
 </div>
@@ -114,7 +117,7 @@
   </article>
 
   <article class="entry entry--boardgame">
-    <p class="entry-accent">Mon travail de Game Design</p>
+    <h2 class="entry-accent">Mon travail de Game Design</h2>
     <p>Distinct de l'univers et du lore ci-dessus : les systèmes que j'ai personnellement conçus pour faire fonctionner Francia comme jeu.</p>
     <div class="entry-meta">
       <span class="tag">Conception de la boucle de jeu</span>
@@ -132,12 +135,12 @@
     <p class="entry-accent">Dossier de présentation</p>
     <h2>Le game concept, en seize pages</h2>
     <p>Univers, boucle de jeu, système de Corruption, héros, bestiaire, Hérauts et Roi Maudit, contenu de la boîte, et un point d'étape honnête sur ce qui reste à éprouver à table.</p>
+    <p class="pdf-direct"><a class="entry-link" href="../assets/francia-game-concept.pdf" target="_blank" rel="noopener">Télécharger le PDF →</a></p>
     <div class="pdf-embed">
       <iframe src="../assets/francia-game-concept.pdf#view=FitH" title="Francia — game concept, document PDF de seize pages" loading="lazy"></iframe>
     </div>
     <p class="pdf-fallback">L'affichage intégré ne fonctionne pas sur tous les mobiles.</p>
-    <a class="entry-link" href="../assets/francia-game-concept.pdf" target="_blank" rel="noopener">Télécharger le PDF →</a>
-  </article>
+      </article>
 
   <article class="entry entry--boardgame">
     <p class="entry-accent">Références visuelles</p>
@@ -180,27 +183,28 @@
     <h2>Je cherche un artiste</h2>
     <p>L'univers et les systèmes sont posés ; il manque les images. Francia a besoin d'un regard qui lui donne sa forme visuelle.</p>
 
-    <p class="entry-accent">Ce que je cherche</p>
+    <h3 class="entry-accent">Ce que je cherche</h3>
     <p><strong>Les six héros.</strong> Trois faces chacun : Niveau 1, Voie de Lumière et Voie de Corruption.</p>
     <p><strong>Les créatures du folklore.</strong> La Tarasque, l'Ankou, les Lavandières de Nuit, la Bête du Gévaudan.</p>
     <p><strong>La carte du royaume</strong> et la direction artistique de l'Ombrume.</p>
 
-    <p class="entry-accent">Ce que je fournis</p>
+    <h3 class="entry-accent">Ce que je fournis</h3>
     <p>Le game concept document, le livret de règles, un univers cohérent et les références visuelles ci-dessus.</p>
 
-    <p class="entry-accent">Financement</p>
+    <h3 class="entry-accent">Financement</h3>
     <p>Le projet est en phase de conception et ne dispose pas de budget à ce jour. Dès les premières illustrations de concept, je monterai un dossier de financement (aides à la création) destiné en priorité à rémunérer l'artiste pour poursuivre le travail, puis un financement participatif avec l'appui d'un community manager.</p>
 
-    <p class="entry-accent">Crédits et droits</p>
+    <h3 class="entry-accent">Crédits et droits</h3>
     <p>À définir ensemble, avant de commencer à travailler : mention au générique, usage des planches dans votre portfolio, étendue des droits cédés. Rien n'est imposé d'avance.</p>
 
   </article>
 
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="wrap">
         <h2>Discutons</h2>
         <p class="lead">Une question, une proposition de collaboration, une envie d'en savoir plus sur un projet ? Écrivez-moi directement.</p>
@@ -224,6 +228,36 @@
   </div>
 </footer>
 
-<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<script>
+  // Les tableaux Pinterest ne sont charges qu'a la demande : le script tiers
+  // n'est injecte qu'au premier clic. Sans JavaScript, chaque bloc reste un
+  // lien direct vers le tableau.
+  (function () {
+    var zones = document.querySelectorAll('.moodboard-embed');
+    if (!zones.length) return;
+    var charge = false;
+
+    function chargerPinterest() {
+      if (charge) return;
+      charge = true;
+      Array.prototype.forEach.call(document.querySelectorAll('.moodboard-load'), function (b) {
+        b.remove();
+      });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://assets.pinterest.com/js/pinit.js';
+      document.body.appendChild(s);
+    }
+
+    Array.prototype.forEach.call(zones, function (zone) {
+      var bouton = document.createElement('button');
+      bouton.type = 'button';
+      bouton.className = 'moodboard-load';
+      bouton.textContent = 'Afficher le tableau Pinterest';
+      bouton.addEventListener('click', chargerPinterest);
+      zone.insertBefore(bouton, zone.firstChild);
+    });
+  })();
+</script>
 </body>
 </html>

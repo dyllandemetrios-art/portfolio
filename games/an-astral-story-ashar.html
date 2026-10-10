@@ -21,15 +21,17 @@
 <meta property="og:title" content="An Astral Story : Ashar — Dyllan Démétrios">
 <meta property="og:description" content="Shoot'em up narratif sous Unity 6 : Kaal'varis Dorn mène les Exilés d'Ashar hors de la prison de Phobos IX. Démo jouable, dix minutes.">
 <meta property="og:url" content="https://dyllandemetrios.vercel.app/games/an-astral-story-ashar.html">
-<meta property="og:image" content="https://dyllandemetrios.vercel.app/assets/images/projects/ashar.jpeg">
+<meta property="og:image" content="https://dyllandemetrios.vercel.app/assets/images/projects/ashar.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="An Astral Story : Ashar — Dyllan Démétrios">
 <meta name="twitter:description" content="Shoot'em up narratif sous Unity 6 : Kaal'varis Dorn mène les Exilés d'Ashar hors de la prison de Phobos IX. Démo jouable, dix minutes.">
-<meta name="twitter:image" content="https://dyllandemetrios.vercel.app/assets/images/projects/ashar.jpeg">
+<meta name="twitter:image" content="https://dyllandemetrios.vercel.app/assets/images/projects/ashar.jpg">
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 
 <header class="site-header">
   <div class="wrap">
@@ -43,7 +45,7 @@
         <a href="../index.html#projets" aria-current="page">Projets</a>
         <div class="nav-dropdown">
           <a href="../index.html#jeux">Jeux</a>
-          <a href="../index.html#prototypes">Prototypes</a>
+          <a href="../index.html#prototypes">Prototypes et concepts</a>
           <a href="../index.html#ecriture">Side Quests</a>
         </div>
       </span>
@@ -70,6 +72,7 @@
   </div>
 </header>
 
+<main id="contenu" tabindex="-1">
 <div class="wrap back-link-wrap">
   <a class="back-link" href="../index.html#jeux">← Retour à Jeux</a>
 </div>
@@ -88,11 +91,11 @@
 <section class="wrap entries">
 
   <article class="entry entry--game">
-    <p class="entry-accent">Pitch</p>
+    <h2 class="entry-accent">Pitch</h2>
     <p>Vous incarnez Kaal’varis Dorn, ancien soldat pléiadien augmenté de force et emprisonné par le Culte. Après avoir volé un chasseur de l’Assemblée Terrienne, il mène les Exilés d’Ashar hors du complexe pénitentiaire de Phobos IX, puis à travers la surface de Mars.</p>
     <p>Patrouilles de l’Assemblée, boss à phases, pilotes pléiadiens à libérer et croiseur de la commandante Amara Solvik à protéger : l’objectif tient en une ligne — survivre à l’évasion et mener les Exilés jusqu’à la liberté.</p>
     <p>Démo gratuite et jouable, environ dix minutes, en navigateur ou sous Windows.</p>
-    <p class="entry-accent">Rôles</p>
+    <h3 class="entry-accent">Rôles</h3>
     <div class="entry-meta">
       <span class="tag tag--role">Game Design</span>
       <span class="tag tag--role">Narrative Design</span>
@@ -117,19 +120,19 @@
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Game Design</p>
+    <h2 class="entry-accent">Game Design</h2>
     <p><strong>Combat Design.</strong> Des rôles d’ennemis distincts, des motifs d’attaque lisibles, des zones de danger identifiables au premier regard, et des boss à phases dont chaque télégraphie laisse une route sûre.</p>
     <p><strong>Game feel.</strong> Déplacement et visée indépendants, visée à 360 degrés avec lissage au stick, capacités réactives — bouclier temporaire, dash et EMP — dont le temps de recharge est rendu visible.</p>
     <p><strong>Data-Driven Design.</strong> Ennemis, vagues, dialogues, capacités et phases de boss sont configurés en ScriptableObjects plutôt qu’écrits en dur : chaque équilibrage se fait sans toucher au code.</p>
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Level Design</p>
+    <h2 class="entry-accent">Level Design</h2>
     <p>Un trajet continu plutôt qu’une suite de niveaux : la station pénitentiaire, puis une colonie martienne habitée, puis l’atmosphère, puis l’espace ouvert. Le décor raconte la distance parcourue.</p>
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Narrative Design</p>
+    <h2 class="entry-accent">Narrative Design</h2>
     <p>Les conversations radio se placent entre les affrontements, jamais pendant. Un état de dialogue suspend toute menace tout en laissant le monde et la musique continuer : on souffle sans sortir du voyage.</p>
   </article>
 
@@ -156,7 +159,7 @@
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Implémentation</p>
+    <h2 class="entry-accent">Implémentation</h2>
     <p>Unity 6 avec Universal Render Pipeline et rendu 2D Pixel Perfect. L’Input System gère des contrôles contextuels clavier, souris et manette. S’y ajoutent le séquençage des vagues et des boss piloté par les données, les points de contrôle, la pause, l’écran de Game Over, des réglages persistants, des transitions musicales par section, et des builds Windows et WebGL.</p>
     <p>Le jeu est intégralement disponible en français et en anglais : menus, tutoriels et dialogues.</p>
     <div class="entry-meta">
@@ -170,7 +173,7 @@
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Production assistée par IA</p>
+    <h2 class="entry-accent">Production assistée par IA</h2>
     <p>Des outils d’IA ont servi à l’implémentation du code, à la documentation technique, à l’itération et à la gestion de production. La direction créative, le game design, les décisions narratives, la sélection des assets, les playtests et la validation finale restent humains.</p>
   </article>
 
@@ -178,21 +181,22 @@
     <p class="entry-accent">Game concept</p>
     <h2>Le document de conception initial</h2>
     <p>Treize pages rédigées avant la production : univers, piliers, boucles, découpage des missions, conditions de victoire et direction artistique. La démo publiée s’en écarte sur plusieurs points — notamment les contrôles et la structure — et le document garde donc la trace des intentions de départ.</p>
+    <p class="pdf-direct"><a class="entry-link" href="../assets/game-concept-ashar.pdf" target="_blank" rel="noopener">Télécharger le game concept →</a></p>
     <div class="pdf-embed">
       <iframe src="../assets/game-concept-ashar.pdf#view=FitH" title="An Astral Story : Ashar — game concept, document PDF de treize pages" loading="lazy"></iframe>
     </div>
     <p class="pdf-fallback">L’affichage intégré ne fonctionne pas sur tous les mobiles.</p>
     <div class="entry-links">
       <a class="entry-link" href="https://demetrios-games.itch.io/an-astral-story-ashar" target="_blank" rel="noopener">Jouer sur itch.io →</a>
-      <a class="entry-link" href="../assets/game-concept-ashar.pdf" target="_blank" rel="noopener">Télécharger le game concept →</a>
     </div>
   </article>
 
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="wrap">
         <h2>Discutons</h2>
         <p class="lead">Une question, une proposition de collaboration, une envie d'en savoir plus sur un projet ? Écrivez-moi directement.</p>

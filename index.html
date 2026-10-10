@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dyllan Démétrios — jeux, romans, imaginaire</title>
-<meta name="description" content="Portfolio de Dyllan Démétrios : jeux vidéo (Unity, Unreal Engine), sagas romanesques et univers visuel.">
+<title>Dyllan Démétrios — Technical Game Designer</title>
+<meta name="description" content="Technical Game Designer à Bordeaux : je conçois, prototype et programme des mécaniques de jeu sous Unity et Unreal Engine. Jeux jouables, prototypes et univers narratifs.">
 <meta name="google-site-verification" content="i0x6aCiIXdUEUX-HJ0CSoNy0dxA6QvU6ZZlaaD_mbmg">
 <meta name="google-site-verification" content="4j2xEF3PjHc6KGUSiYqxdhGrrFkNaQo8T7RdZfoMecg">
 <link rel="canonical" href="https://dyllandemetrios.vercel.app/">
@@ -20,13 +20,13 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dyllan Démétrios">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:title" content="Dyllan Démétrios — jeux, romans, imaginaire">
-<meta property="og:description" content="Portfolio de Dyllan Démétrios : jeux vidéo (Unity, Unreal Engine), sagas romanesques et univers visuel.">
+<meta property="og:title" content="Dyllan Démétrios — Technical Game Designer">
+<meta property="og:description" content="Technical Game Designer à Bordeaux : je conçois, prototype et programme des mécaniques de jeu sous Unity et Unreal Engine. Jeux jouables, prototypes et univers narratifs.">
 <meta property="og:url" content="https://dyllandemetrios.vercel.app/">
 <meta property="og:image" content="https://dyllandemetrios.vercel.app/assets/images/og-default.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dyllan Démétrios — jeux, romans, imaginaire">
-<meta name="twitter:description" content="Portfolio de Dyllan Démétrios : jeux vidéo (Unity, Unreal Engine), sagas romanesques et univers visuel.">
+<meta name="twitter:title" content="Dyllan Démétrios — Technical Game Designer">
+<meta name="twitter:description" content="Technical Game Designer à Bordeaux : je conçois, prototype et programme des mécaniques de jeu sous Unity et Unreal Engine. Jeux jouables, prototypes et univers narratifs.">
 <meta name="twitter:image" content="https://dyllandemetrios.vercel.app/assets/images/og-default.jpg">
 
 <link rel="stylesheet" href="styles.css">
@@ -57,6 +57,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
 <header class="site-header">
   <div class="wrap">
     <div class="site-brand">
@@ -69,7 +71,7 @@
         <a href="index.html#projets">Projets</a>
         <div class="nav-dropdown">
           <a href="index.html#jeux">Jeux</a>
-          <a href="index.html#prototypes">Prototypes</a>
+          <a href="index.html#prototypes">Prototypes et concepts</a>
           <a href="index.html#ecriture">Side Quests</a>
         </div>
       </span>
@@ -96,10 +98,17 @@
   </div>
 </header>
 
+<main id="contenu" tabindex="-1">
 <section class="hero">
   <div class="wrap">
     <h1>Je conçois, prototype et programme des mécaniques de jeu pour créer des expériences réellement jouables.</h1>
     <p class="hero-tags">Unity · C# · Unreal Engine</p>
+    <p class="hero-note">Basé à Bordeaux, en recherche d’une première expérience en game design.</p>
+    <div class="hero-actions">
+      <a class="button button--primary" href="#projets">Voir mes projets</a>
+      <a class="button" href="#contact">Me contacter</a>
+      <a class="button" href="assets/cv_game_design.pdf" target="_blank" rel="noopener">Mon CV</a>
+    </div>
     <p class="hero-signature">« J'aime construire des mondes, en programmes et en mots. »</p>
   </div>
 </section>
@@ -112,171 +121,153 @@
     <p class="section-lead-tags">Game Design · Gameplay Programming · Systems Design · Narrative Design</p>
     <div class="project-grid">
 
-      <div class="project-item">
-        <a class="project-card project-card--game" href="games/an-astral-story-ashar.html" aria-label="An Astral Story : Ashar — Kaal’varis Dorn mène les Exilés d’Ashar hors de la prison de Phobos IX, à travers Mars et jusqu’à l’espace.">
-          <div class="project-card-media" style="--card-image:url('assets/images/projects/ashar.jpeg')"></div>
-          <div class="project-card-label">
-            <p class="project-card-kicker">Unity 6 — shoot’em up narratif</p>
-            <h2>An Astral Story : Ashar</h2>
-          </div>
+      <div class="project-item project-item--game">
+        <a class="project-card" href="games/an-astral-story-ashar.html" tabindex="-1" aria-hidden="true">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/ashar.jpg')"></div>
           <span class="project-card-badge">Game Design</span>
-          <div class="project-card-overlay">
-            <p class="project-card-kicker">Unity 6 — shoot’em up narratif</p>
-            <h2>An Astral Story : Ashar</h2>
-            <p class="project-card-desc">Kaal’varis Dorn mène les Exilés d’Ashar hors de la prison de Phobos IX, à travers Mars et jusqu’à l’espace.</p>
-            <p class="project-card-role">Rôles</p>
-            <div class="entry-meta">
-              <span class="tag tag--role">Game Design</span>
-              <span class="tag tag--role">Narrative Design</span>
-              <span class="tag tag--role">Gameplay Programming</span>
-            </div>
-            <div class="entry-meta">
-              <span class="tag">Unity 6</span>
-              <span class="tag">C#</span>
-              <span class="tag">Jouable en navigateur</span>
-            </div>
-          </div>
         </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Unity 6 — shoot’em up narratif</p>
+          <h3><a href="games/an-astral-story-ashar.html">An Astral Story : Ashar</a></h3>
+          <p class="project-card-status">Démo jouable — environ 10 min</p>
+          <p class="project-card-desc">Kaal’varis Dorn mène les Exilés d’Ashar hors de la prison de Phobos IX, à travers Mars et jusqu’à l’espace.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Game Design</span>
+            <span class="tag tag--role">Narrative Design</span>
+            <span class="tag tag--role">Gameplay Programming</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Unity 6</span>
+            <span class="tag">C#</span>
+            <span class="tag">Jouable en navigateur</span>
+          </div>
+        </div>
       </div>
 
-      <div class="project-item">
-        <a class="project-card project-card--game" href="games/robot-clean.html" aria-label="Robot Clean — Vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué.">
+      <div class="project-item project-item--game">
+        <a class="project-card" href="games/robot-clean.html" tabindex="-1" aria-hidden="true">
           <div class="project-card-media" style="--card-image:url('assets/images/projects/robot-clean.jpg')"></div>
-          <div class="project-card-label">
-            <p class="project-card-kicker">Unity — infinite runner 3D</p>
-            <h2>Robot Clean</h2>
-          </div>
           <span class="project-card-badge">Gameplay Programming</span>
-          <div class="project-card-overlay">
-            <p class="project-card-kicker">Unity — infinite runner 3D</p>
-            <h2>Robot Clean</h2>
-            <p class="project-card-desc">Vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué.</p>
-            <p class="project-card-role">Rôles</p>
-            <div class="entry-meta">
-              <span class="tag tag--role">Gameplay Programming</span>
-              <span class="tag tag--role">Systems Design</span>
-            </div>
-            <div class="entry-meta">
-              <span class="tag">Unity</span>
-              <span class="tag">C#</span>
-              <span class="tag">Projet de formation</span>
-            </div>
-          </div>
         </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Unity — infinite runner 3D</p>
+          <h3><a href="games/robot-clean.html">Robot Clean</a></h3>
+          <p class="project-card-status">Jeu terminé — jouable en navigateur</p>
+          <p class="project-card-desc">Vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Gameplay Programming</span>
+            <span class="tag tag--role">Systems Design</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Projet de formation</span>
+          </div>
+        </div>
       </div>
 
-      <div class="project-item">
-        <a class="project-card project-card--game" href="games/eden-snake.html" aria-label="Eden Snake — Le Snake revisité : choisissez votre pomme, Adam, Ève ou Lilith.">
+      <div class="project-item project-item--game">
+        <a class="project-card" href="games/eden-snake.html" tabindex="-1" aria-hidden="true">
           <div class="project-card-media" style="--card-image:url('assets/images/projects/eden-snake.jpg')"></div>
-          <div class="project-card-label">
-            <p class="project-card-kicker">Unity — arcade narratif</p>
-            <h2>Eden Snake</h2>
-          </div>
           <span class="project-card-badge">Gameplay Programming</span>
-          <div class="project-card-overlay">
-            <p class="project-card-kicker">Unity — arcade narratif</p>
-            <h2>Eden Snake</h2>
-            <p class="project-card-desc">Le Snake revisité : choisissez votre pomme — Adam, Ève ou Lilith — chacune ouvrant un chemin narratif différent.</p>
-            <p class="project-card-role">Rôles</p>
-            <div class="entry-meta">
-              <span class="tag tag--role">Game Design</span>
-              <span class="tag tag--role">Narrative Design</span>
-              <span class="tag tag--role">Gameplay Programming</span>
-            </div>
-            <div class="entry-meta">
-              <span class="tag">Unity</span>
-              <span class="tag">C#</span>
-              <span class="tag">Ink</span>
-              <span class="tag">Projet de formation</span>
-            </div>
-          </div>
         </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Unity — arcade narratif</p>
+          <h3><a href="games/eden-snake.html">Eden Snake</a></h3>
+          <p class="project-card-status">Jeu terminé — jouable en navigateur</p>
+          <p class="project-card-desc">Le Snake revisité : choisissez votre pomme — Adam, Ève ou Lilith — chacune ouvrant un chemin narratif différent.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Game Design</span>
+            <span class="tag tag--role">Narrative Design</span>
+            <span class="tag tag--role">Gameplay Programming</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Ink</span>
+            <span class="tag">Projet de formation</span>
+          </div>
+        </div>
       </div>
 
     </div>
   </div>
 
   <div class="project-category" id="prototypes">
-    <h2>Prototypes</h2>
+    <h2>Prototypes et concepts</h2>
     <p class="section-lead">Des projets où j’isole une question de design ou de technique pour y répondre : une mécanique à éprouver, un moteur à apprendre, un concept à documenter avant de le produire.</p>
     <p class="section-lead-tags">Game Design · Prototyping · Gameplay Programming · Systems Design</p>
     <div class="project-grid">
 
-      <div class="project-item">
-        <a class="project-card project-card--game" href="concept-chrones.html" aria-label="Amarante : Le Réveil des Cendres — RPG d'action-exploration historique où la mémoire devient une mécanique de progression.">
+      <div class="project-item project-item--game">
+        <a class="project-card" href="concept-chrones.html" tabindex="-1" aria-hidden="true">
           <div class="project-card-media" style="--card-image:url('assets/images/projects/chrones.jpg')"></div>
-          <div class="project-card-label">
-            <p class="project-card-kicker">Unreal Engine 5 — RPG narratif</p>
-            <h2>Amarante : Le Réveil des Cendres</h2>
-          </div>
           <span class="project-card-badge">Game Design</span>
-          <div class="project-card-overlay">
-            <p class="project-card-kicker">Unreal Engine 5 — RPG narratif</p>
-            <h2>Amarante : Le Réveil des Cendres</h2>
-            <p class="project-card-desc">RPG d'action-exploration historique où la mémoire devient une mécanique de progression.</p>
-            <p class="project-card-role">Rôles</p>
-            <div class="entry-meta">
-              <span class="tag tag--role">Game Design</span>
-              <span class="tag tag--role">Narrative Design</span>
-              <span class="tag tag--role">Worldbuilding</span>
-            </div>
-            <div class="entry-meta">
-              <span class="tag">Unreal Engine 5</span>
-              <span class="tag">Projet de formation en cours</span>
-            </div>
-          </div>
         </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Unreal Engine 5 — RPG narratif</p>
+          <h3><a href="concept-chrones.html">Amarante : Le Réveil des Cendres</a></h3>
+          <p class="project-card-status">Concept documenté — sans prototype</p>
+          <p class="project-card-desc">RPG d'action-exploration historique où la mémoire devient une mécanique de progression.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Game Design</span>
+            <span class="tag tag--role">Narrative Design</span>
+            <span class="tag tag--role">Worldbuilding</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Unreal Engine 5</span>
+            <span class="tag">Projet de formation en cours</span>
+          </div>
+        </div>
       </div>
 
-      <div class="project-item">
-        <a class="project-card project-card--game" href="games/solarpunk-sky-garden.html" aria-label="Solarpunk Sky Garden — Nestor, un drone vétéran de guerre, doit apprendre à cultiver un jardin suspendu.">
+      <div class="project-item project-item--game">
+        <a class="project-card" href="games/solarpunk-sky-garden.html" tabindex="-1" aria-hidden="true">
           <div class="project-card-media" style="--card-image:url('assets/images/projects/solarpunk-sky-garden.jpg')"></div>
-          <div class="project-card-label">
-            <p class="project-card-kicker">Unity — gestion &amp; simulation</p>
-            <h2>Solarpunk Sky Garden</h2>
-          </div>
           <span class="project-card-badge">Gameplay Programming</span>
-          <div class="project-card-overlay">
-            <p class="project-card-kicker">Unity — gestion &amp; simulation</p>
-            <h2>Solarpunk Sky Garden</h2>
-            <p class="project-card-desc">Nestor, un drone vétéran de guerre, doit apprendre à cultiver un jardin suspendu.</p>
-            <p class="project-card-role">Rôles</p>
-            <div class="entry-meta">
-              <span class="tag tag--role">Gameplay Programming</span>
-              <span class="tag tag--role">Systems Design</span>
-            </div>
-            <div class="entry-meta">
-              <span class="tag">Unity</span>
-              <span class="tag">C#</span>
-              <span class="tag">Projet de formation</span>
-            </div>
-          </div>
         </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Unity — gestion &amp; simulation</p>
+          <h3><a href="games/solarpunk-sky-garden.html">Solarpunk Sky Garden</a></h3>
+          <p class="project-card-status">Prototype d’apprentissage — jouable</p>
+          <p class="project-card-desc">Nestor, un drone vétéran de guerre, doit apprendre à cultiver un jardin suspendu.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Gameplay Programming</span>
+            <span class="tag tag--role">Systems Design</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Projet de formation</span>
+          </div>
+        </div>
       </div>
 
-      <div class="project-item">
-        <a class="project-card project-card--game" href="games/francia-souls-like.html" aria-label="Francia Souls-Like — Un combat de boss à la troisième personne : combo, endurance, esquive et un boss en trois phases.">
-          <div class="project-card-media" style="--card-image:url('assets/images/projects/francia-souls-like.png')"></div>
-          <div class="project-card-label">
-            <p class="project-card-kicker">Unreal Engine 5 — prototype de combat</p>
-            <h2>Francia Souls-Like</h2>
-          </div>
+      <div class="project-item project-item--game">
+        <a class="project-card" href="games/francia-souls-like.html" tabindex="-1" aria-hidden="true">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/francia-souls-like.jpg')"></div>
           <span class="project-card-badge">Gameplay Programming</span>
-          <div class="project-card-overlay">
-            <p class="project-card-kicker">Unreal Engine 5 — prototype de combat</p>
-            <h2>Francia Souls-Like</h2>
-            <p class="project-card-desc">Un combat de boss à la troisième personne : combo, endurance, esquive et un boss en trois phases.</p>
-            <p class="project-card-role">Rôles</p>
-            <div class="entry-meta">
-              <span class="tag tag--role">Gameplay Programming</span>
-            </div>
-            <div class="entry-meta">
-              <span class="tag">Unreal Engine 5</span>
-              <span class="tag">Blueprints</span>
-              <span class="tag">Jouable</span>
-            </div>
-          </div>
         </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Unreal Engine 5 — prototype de combat</p>
+          <h3><a href="games/francia-souls-like.html">Francia Souls-Like</a></h3>
+          <p class="project-card-status">Prototype jouable — démo Windows</p>
+          <p class="project-card-desc">Un combat de boss à la troisième personne : combo, endurance, esquive et un boss en trois phases.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Gameplay Programming</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Unreal Engine 5</span>
+            <span class="tag">Blueprints</span>
+            <span class="tag">Jouable</span>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -288,94 +279,111 @@
     <p class="section-lead-tags">Writing · Worldbuilding · Narrative Design · Character Design</p>
     <div class="project-grid">
 
-      <div class="project-item">
-        <a class="project-card project-card--novel-anandavira" href="novels/anandavira.html" aria-label="Anandavīra — De la chute de l'Atlantide à 2213, la rivalité de deux entités astrales se rejoue à travers plusieurs vies humaines.">
+
+      <div class="project-item project-item--novel-anandavira">
+        <a class="project-card" href="novels/anandavira.html" tabindex="-1" aria-hidden="true">
           <div class="project-card-media" style="--card-image:url('assets/images/projects/anandavira.jpg')"></div>
-          <div class="project-card-label">
-            <p class="project-card-kicker">Space opera mystique — trilogie</p>
-            <h2>Anandavīra</h2>
-          </div>
           <span class="project-card-badge">Worldbuilding</span>
-          <div class="project-card-overlay">
-            <p class="project-card-kicker">Space opera mystique — trilogie</p>
-            <h2>Anandavīra</h2>
-            <p class="project-card-desc">De la chute de l'Atlantide à 2213, la rivalité de deux entités astrales se rejoue à travers plusieurs vies humaines.</p>
-            <p class="project-card-role">Rôles</p>
-            <div class="entry-meta">
-              <span class="tag tag--role">Worldbuilding</span>
-              <span class="tag tag--role">Narrative Design</span>
-              <span class="tag tag--role">Writing</span>
-            </div>
-            <div class="entry-meta">
-              <span class="tag">Space Opera Mystique</span>
-              <span class="tag">Adaptation animée</span>
-              <span class="tag">Recherche un concept artist</span>
-            </div>
-          </div>
         </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Space opera mystique — trilogie</p>
+          <h3><a href="novels/anandavira.html">Anandavīra</a></h3>
+          <p class="project-card-status">Tomes 1 et 2 achevés, tome 3 structuré</p>
+          <p class="project-card-desc">De la chute de l'Atlantide à 2213, la rivalité de deux entités astrales se rejoue à travers plusieurs vies humaines.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Worldbuilding</span>
+            <span class="tag tag--role">Narrative Design</span>
+            <span class="tag tag--role">Writing</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Space Opera Mystique</span>
+            <span class="tag">Adaptation animée</span>
+            <span class="tag">Recherche un concept artist</span>
+          </div>
+        </div>
       </div>
 
-      <div class="project-item">
-        <a class="project-card project-card--novel-chrones" href="novels/immarcescible.html" aria-label="Immarcescible — Immortelle mais amnésique, Aelya se réveille dans le Languedoc cathare de 1209.">
+      <div class="project-item project-item--novel-chrones">
+        <a class="project-card" href="novels/immarcescible.html" tabindex="-1" aria-hidden="true">
           <div class="project-card-media" style="--card-image:url('assets/images/projects/immarcescible.jpg')"></div>
-          <div class="project-card-label">
-            <p class="project-card-kicker">Dark fantasy — saga de plusieurs tomes</p>
-            <h2>Immarcescible</h2>
-          </div>
           <span class="project-card-badge">Worldbuilding</span>
-          <div class="project-card-overlay">
-            <p class="project-card-kicker">Dark fantasy — saga de plusieurs tomes</p>
-            <h2>Immarcescible</h2>
-            <p class="project-card-desc">Immortelle mais amnésique, Aëlya se réveille dans le Languedoc cathare de 1209, en pleine croisade albigeoise.</p>
-            <p class="project-card-role">Rôles</p>
-            <div class="entry-meta">
-              <span class="tag tag--role">Worldbuilding</span>
-              <span class="tag tag--role">Narrative Design</span>
-              <span class="tag tag--role">Writing</span>
-            </div>
-            <div class="entry-meta">
-              <span class="tag">Inspiré de faits historiques</span>
-              <span class="tag">Créatures folkloriques françaises</span>
-              <span class="tag">Adaptation en jeu vidéo</span>
-            </div>
-          </div>
         </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Dark fantasy — saga de plusieurs tomes</p>
+          <h3><a href="novels/immarcescible.html">Immarcescible</a></h3>
+          <p class="project-card-status">Saga en cours d’écriture</p>
+          <p class="project-card-desc">Immortelle mais amnésique, Aëlya se réveille dans le Languedoc cathare de 1209, en pleine croisade albigeoise.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Worldbuilding</span>
+            <span class="tag tag--role">Narrative Design</span>
+            <span class="tag tag--role">Writing</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Inspiré de faits historiques</span>
+            <span class="tag">Créatures folkloriques françaises</span>
+            <span class="tag">Adaptation en jeu vidéo</span>
+          </div>
+        </div>
       </div>
 
-      <div class="project-item">
-        <a class="project-card project-card--boardgame" href="boardgames/francia.html" aria-label="Francia — Francia se déroule dans une version mythologique de la Francie du XIIIe siècle.">
+      <div class="project-item project-item--boardgame">
+        <a class="project-card" href="boardgames/francia.html" tabindex="-1" aria-hidden="true">
           <div class="project-card-media" style="--card-image:url('assets/images/projects/francia.jpg')"></div>
-          <div class="project-card-label">
-            <p class="project-card-kicker">Jeu de plateau coopératif</p>
-            <h2>Francia</h2>
-          </div>
           <span class="project-card-badge">Game Design</span>
-          <div class="project-card-overlay">
-            <p class="project-card-kicker">Jeu de plateau coopératif</p>
-            <h2>Francia</h2>
-            <p class="project-card-desc">Francia se déroule dans une version mythologique de la Francie du XIIIe siècle, rongée par l'Ombrume.</p>
-            <p class="project-card-role">Rôles</p>
-            <div class="entry-meta">
-              <span class="tag tag--role">Game Design</span>
-              <span class="tag tag--role">Équilibrage</span>
-              <span class="tag tag--role">Worldbuilding</span>
-            </div>
-            <div class="entry-meta">
-              <span class="tag">3 à 6 joueurs</span>
-              <span class="tag">Coopératif</span>
-              <span class="tag">Folklore français</span>
-              <span class="tag">En conception</span>
-            </div>
-          </div>
         </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Jeu de plateau coopératif</p>
+          <h3><a href="boardgames/francia.html">Francia</a></h3>
+          <p class="project-card-status">Règles complètes — à éprouver à table</p>
+          <p class="project-card-desc">Francia se déroule dans une version mythologique de la Francie du XIIIe siècle, rongée par l'Ombrume.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Game Design</span>
+            <span class="tag tag--role">Équilibrage</span>
+            <span class="tag tag--role">Worldbuilding</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">3 à 6 joueurs</span>
+            <span class="tag">Coopératif</span>
+            <span class="tag">Folklore français</span>
+            <span class="tag">En conception</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item project-item--novel-anandavira">
+        <a class="project-card" href="ecriture.html" tabindex="-1" aria-hidden="true">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/vignette-nouvelle.jpg')"></div>
+          <span class="project-card-badge">Narrative Design</span>
+        </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Nouvelles et extraits — liseuse</p>
+          <h3><a href="ecriture.html">Écriture</a></h3>
+          <p class="project-card-status">Trois textes en lecture libre</p>
+          <p class="project-card-desc">Deux nouvelles de science-fiction, le prologue d’Anandavīra, et à venir des documents de worldbuilding.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Narrative Design</span>
+            <span class="tag tag--role">Worldbuilding</span>
+            <span class="tag tag--role">Writing</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Nouvelles</span>
+            <span class="tag">Prologue de roman</span>
+            <span class="tag">Lecture en ligne</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="wrap">
         <h2>Discutons</h2>
         <p class="lead">Une question, une proposition de collaboration, une envie d'en savoir plus sur un projet ? Écrivez-moi directement.</p>

@@ -31,6 +31,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
 <header class="site-header">
   <div class="wrap">
     <div class="site-brand">
@@ -43,7 +45,7 @@
         <a href="../index.html#projets" aria-current="page">Projets</a>
         <div class="nav-dropdown">
           <a href="../index.html#jeux">Jeux</a>
-          <a href="../index.html#prototypes">Prototypes</a>
+          <a href="../index.html#prototypes">Prototypes et concepts</a>
           <a href="../index.html#ecriture">Side Quests</a>
         </div>
       </span>
@@ -70,6 +72,7 @@
   </div>
 </header>
 
+<main id="contenu" tabindex="-1">
 <div class="wrap back-link-wrap">
   <a class="back-link" href="../index.html#jeux">← Retour à Jeux</a>
 </div>
@@ -89,13 +92,13 @@
 <section class="wrap entries">
 
   <article class="entry entry--game">
-    <p class="entry-accent">Pitch</p>
+    <h2 class="entry-accent">Pitch</h2>
     <p>Robot Clean est un infinite runner 3D où vous incarnez Stuffy, un robot inachevé qui nettoie un monde pollué. Collectez des déchets pour survivre, récupérez des composants électroniques pour améliorer votre cœur artificiel, et esquivez les obstacles alors que le monde s'accélère autour de vous.</p>
-    <p>Projet réalisé en équipe avec plusieurs game designers, dans le cadre de ma formation à Gaming Campus. Jeu terminé et jouable, à la différence de Amarante qui en est encore au stade Game Concept.</p>
+    <p>Projet réalisé en équipe avec plusieurs game designers, dans le cadre de ma formation à Gaming Campus. Jeu terminé et jouable.</p>
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Mon rôle</p>
+    <h2 class="entry-accent">Mon rôle</h2>
     <div class="entry-meta">
       <span class="tag tag--role">Gameplay Programming</span>
       <span class="tag tag--role">Systems Design</span>
@@ -108,7 +111,7 @@
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Contrôles</p>
+    <h2 class="entry-accent">Contrôles</h2>
     <table class="controls">
       <thead>
         <tr><th>Action</th><th>Clavier</th></tr>
@@ -123,7 +126,7 @@
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Implémentation</p>
+    <h2 class="entry-accent">Implémentation</h2>
     <p>La programmation sert directement les systèmes ci-dessus : architecture événementielle via un bus d'événements statique éliminant les dépendances directes entre managers, détection de collision sphérique personnalisée avec filtrage par tag pour distinguer obstacles et objets à collecter, détection du sol dynamique par raycast pour un atterrissage précis après un saut, gestion audio centralisée avec changement automatique de musique selon l'état du jeu, sérialisation JSON pour la persistance.</p>
     <div class="entry-meta">
       <span class="tag">Unity</span>
@@ -140,10 +143,11 @@
   </article>
 
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="wrap">
         <h2>Discutons</h2>
         <p class="lead">Une question, une proposition de collaboration, une envie d'en savoir plus sur un projet ? Écrivez-moi directement.</p>

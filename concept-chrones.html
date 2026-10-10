@@ -31,6 +31,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
 <header class="site-header">
   <div class="wrap">
     <div class="site-brand">
@@ -43,7 +45,7 @@
         <a href="index.html#projets" aria-current="page">Projets</a>
         <div class="nav-dropdown">
           <a href="index.html#jeux">Jeux</a>
-          <a href="index.html#prototypes">Prototypes</a>
+          <a href="index.html#prototypes">Prototypes et concepts</a>
           <a href="index.html#ecriture">Side Quests</a>
         </div>
       </span>
@@ -70,12 +72,13 @@
   </div>
 </header>
 
+<main id="contenu" tabindex="-1">
 <section class="page-head">
   <div class="wrap">
     <p class="kicker">Game Concept</p>
     <h1>Amarante : Le Réveil des Cendres</h1>
     <p>Un RPG d'action-exploration où une immortelle amnésique reconstruit deux mille ans de mémoire à travers les cendres de la croisade albigeoise, en se demandant si combattre le mal par le mal ne la transforme pas en ce qu'elle exècre.</p>
-    <p><em>Game Concept / GDD en cours de rédaction — aucun prototype technique n'existe à ce jour.</em></p>
+    <p><em>Game Concept complet ; le GDD, document de production plus détaillé, est en cours de rédaction. Aucun prototype technique n'existe à ce jour.</em></p>
   </div>
 </section>
 
@@ -97,13 +100,13 @@
   </article>
 
   <article class="entry entry--concept">
-    <p class="entry-accent">02 — Mon rôle</p>
+    <h2 class="entry-accent">02 — Mon rôle</h2>
     <div class="entry-meta">
       <span class="tag tag--role">Game Design</span>
       <span class="tag tag--role">Narrative Design</span>
       <span class="tag tag--role">Worldbuilding</span>
     </div>
-    <p>Ce Game Concept est entièrement conçu par mes soins : la boucle de gameplay — exploration, déclenchement et déblocage de souvenirs, détaillée plus bas, le système de mémoire comme mécanique centrale de progression (03), le système de choix et de conséquences qui façonne dialogues, fidélité des alliés et fin de l'histoire (05), ainsi que l'articulation entre ces systèmes tout au long de l'expérience.</p>
+    <p>Ce Game Concept est entièrement conçu par mes soins : la boucle de gameplay — exploration, déclenchement et déblocage de souvenirs, détaillée plus bas, le système de mémoire comme mécanique centrale de progression, le système de choix et de conséquences qui façonne dialogues, fidélité des alliés et fin de l'histoire, ainsi que l'articulation entre ces systèmes tout au long de l'expérience.</p>
     <p>Vue à la troisième personne, caméra à l'épaule. Aelya marche, court, se bat à l'épée ou à l'arc, parle, fouille, se cache — un corps de femme du XIIIe siècle, pas une acrobate. Solo exclusivement, aucune dépendance réseau, achat unique premium sans monétisation in-game.</p>
     <div class="entry-meta">
       <span class="tag">Unreal Engine 5</span>
@@ -140,7 +143,7 @@
     <h2>A-t-elle le droit d'utiliser le mal contre le mal ?</h2>
     <p>Amarante n'est pas un jeu sur l'immortalité. C'est un jeu sur ce que devient quelqu'un à qui on a tout pris et qui a le temps de se venger.</p>
     <p>Cette question n'est pas un thème posé en préambule puis oublié : elle est mécanique. Chaque choix majeur déplace une jauge morale invisible qui façonne les dialogues disponibles, la fidélité des alliés, les capacités accessibles, et la fin de l'histoire.</p>
-    <p>La narration s'appuie sur une protagoniste dont la mémoire fragmentée est elle-même la structure du récit (01, 03), et sur des figures historiques réellement documentées — Simon de Montfort, Jacques de Molay, Philippe IV le Bel, Marguerite Porete (03) — qui ancrent la fiction dans les faits plutôt que dans la pure liberté narrative.</p>
+    <p>La narration s'appuie sur une protagoniste dont la mémoire fragmentée est elle-même la structure du récit, comme l'exposent la vision et les piliers de gameplay, et sur des figures historiques réellement documentées — Simon de Montfort, Jacques de Molay, Philippe IV le Bel, Marguerite Porete — qui ancrent la fiction dans les faits plutôt que dans la pure liberté narrative.</p>
   </article>
 
   <article class="entry entry--concept">
@@ -160,7 +163,7 @@
   </article>
 
   <article class="entry entry--concept">
-    <p class="entry-accent">08 — Prototypage</p>
+    <h2 class="entry-accent">08 — Prototypage</h2>
     <p><strong>Conçu et documenté à ce jour :</strong> le Game Concept complet — piliers de gameplay, boucle de jeu, systèmes narratifs, worldbuilding, direction artistique.</p>
     <p><strong>Prototype :</strong> démarrage de la production du prototype en novembre 2026.</p>
   </article>
@@ -197,12 +200,12 @@
     <p class="entry-accent">Game concept</p>
     <h2>Le document complet, en onze pages</h2>
     <p>Fiche signalétique, univers et trois actes, les sept piliers, les boucles de gameplay, les contrôles clavier et manette, les conditions de victoire et de défaite, le positionnement et la direction artistique avec sa palette.</p>
+    <p class="pdf-direct"><a class="entry-link" href="assets/game-concept-amarante.pdf" target="_blank" rel="noopener">Télécharger le PDF →</a></p>
     <div class="pdf-embed">
       <iframe src="assets/game-concept-amarante.pdf#view=FitH" title="Amarante : Le Réveil des Cendres — game concept, document PDF de onze pages" loading="lazy"></iframe>
     </div>
     <p class="pdf-fallback">L'affichage intégré ne fonctionne pas sur tous les mobiles.</p>
-    <a class="entry-link" href="assets/game-concept-amarante.pdf" target="_blank" rel="noopener">Télécharger le PDF →</a>
-  </article>
+      </article>
 
   <article class="entry entry--concept">
     <p class="entry-accent">Références visuelles</p>
@@ -215,10 +218,11 @@
   </article>
 
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="wrap">
         <h2>Discutons</h2>
         <p class="lead">Une question, une proposition de collaboration, une envie d'en savoir plus sur un projet ? Écrivez-moi directement.</p>
@@ -242,6 +246,36 @@
   </div>
 </footer>
 
-<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<script>
+  // Les tableaux Pinterest ne sont charges qu'a la demande : le script tiers
+  // n'est injecte qu'au premier clic. Sans JavaScript, chaque bloc reste un
+  // lien direct vers le tableau.
+  (function () {
+    var zones = document.querySelectorAll('.moodboard-embed');
+    if (!zones.length) return;
+    var charge = false;
+
+    function chargerPinterest() {
+      if (charge) return;
+      charge = true;
+      Array.prototype.forEach.call(document.querySelectorAll('.moodboard-load'), function (b) {
+        b.remove();
+      });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://assets.pinterest.com/js/pinit.js';
+      document.body.appendChild(s);
+    }
+
+    Array.prototype.forEach.call(zones, function (zone) {
+      var bouton = document.createElement('button');
+      bouton.type = 'button';
+      bouton.className = 'moodboard-load';
+      bouton.textContent = 'Afficher le tableau Pinterest';
+      bouton.addEventListener('click', chargerPinterest);
+      zone.insertBefore(bouton, zone.firstChild);
+    });
+  })();
+</script>
 </body>
 </html>

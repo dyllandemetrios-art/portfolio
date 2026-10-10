@@ -31,6 +31,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
 <header class="site-header">
   <div class="wrap">
     <div class="site-brand">
@@ -43,7 +45,7 @@
         <a href="../index.html#projets" aria-current="page">Projets</a>
         <div class="nav-dropdown">
           <a href="../index.html#jeux">Jeux</a>
-          <a href="../index.html#prototypes">Prototypes</a>
+          <a href="../index.html#prototypes">Prototypes et concepts</a>
           <a href="../index.html#ecriture">Side Quests</a>
         </div>
       </span>
@@ -70,6 +72,7 @@
   </div>
 </header>
 
+<main id="contenu" tabindex="-1">
 <div class="wrap back-link-wrap">
   <a class="back-link" href="../index.html#jeux">← Retour à Jeux</a>
 </div>
@@ -89,10 +92,10 @@
 <section class="wrap entries">
 
   <article class="entry entry--game">
-    <p class="entry-accent">Pitch</p>
+    <h2 class="entry-accent">Pitch</h2>
     <p>Eden Snake est une immersion narrative arcade — choisissez votre pomme : Adam, Ève ou Lilith ? Chacune ouvre un chemin différent. Essayez-les toutes pour trouver la fin du jeu.</p>
     <p>Projet Unity réalisé et publié.</p>
-    <p class="entry-accent">Rôles</p>
+    <h3 class="entry-accent">Rôles</h3>
     <div class="entry-meta">
       <span class="tag tag--role">Game Design</span>
       <span class="tag tag--role">Narrative Design</span>
@@ -102,19 +105,19 @@
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Game Design</p>
+    <h2 class="entry-accent">Game Design</h2>
     <p><strong>Boucle arcade.</strong> Mécaniques de Snake enrichies de buffs progressifs et d'un boss caché, qui viennent complexifier la formule de base.</p>
     <p><strong>Trois pommes, trois chemins.</strong> Adam, Ève ou Lilith : le choix de la pomme structure l'expérience et modifie le parcours du joueur jusqu'à la fin de partie.</p>
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Narrative Design</p>
+    <h2 class="entry-accent">Narrative Design</h2>
     <p><strong>Narration intégrée au gameplay.</strong> Système de dialogue Ink tissé directement dans l'arcade, pas en cinématiques séparées.</p>
-    <p>Le choix de la pomme déclenche un embranchement narratif qui façonne le parcours du joueur jusqu'à sa fin de partie — pas un Snake classique avec du texte ajouté par-dessus.</p>
+    <p>Le choix de la pomme déclenche un embranchement narratif qui façonne le parcours du joueur jusqu'à sa fin de partie.</p>
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Contrôles</p>
+    <h2 class="entry-accent">Contrôles</h2>
     <table class="controls">
       <thead>
         <tr><th>Action</th><th>Clavier et souris</th></tr>
@@ -128,7 +131,7 @@
   </article>
 
   <article class="entry entry--game">
-    <p class="entry-accent">Programmation</p>
+    <h2 class="entry-accent">Programmation</h2>
     <p>Au service du gameplay et de la narration ci-dessus : programmation orientée objet avec architecture par héritage pour les types de pommes et les comportements du serpent, gestion de scènes pour des transitions fluides entre menu, gameplay et séquences narratives, Service Locator Pattern pour découpler les managers d'audio, d'UI, de score et de suivi du parcours, machine à états pour gérer pause, renaissance et victoire sans casser le flow, spawn dynamique des pommes selon les choix du joueur, high score persistant, et un boss au comportement autonome qui cible les pommes, vole des segments et combat par collision.</p>
     <div class="entry-meta">
       <span class="tag">Unity</span>
@@ -143,10 +146,11 @@
   </article>
 
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="wrap">
         <h2>Discutons</h2>
         <p class="lead">Une question, une proposition de collaboration, une envie d'en savoir plus sur un projet ? Écrivez-moi directement.</p>

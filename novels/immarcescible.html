@@ -31,6 +31,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
 <header class="site-header">
   <div class="wrap">
     <div class="site-brand">
@@ -43,7 +45,7 @@
         <a href="../index.html#projets" aria-current="page">Projets</a>
         <div class="nav-dropdown">
           <a href="../index.html#jeux">Jeux</a>
-          <a href="../index.html#prototypes">Prototypes</a>
+          <a href="../index.html#prototypes">Prototypes et concepts</a>
           <a href="../index.html#ecriture">Side Quests</a>
         </div>
       </span>
@@ -70,6 +72,7 @@
   </div>
 </header>
 
+<main id="contenu" tabindex="-1">
 <div class="wrap back-link-wrap">
   <a class="back-link" href="../index.html#ecriture">← Retour à Side Quests</a>
 </div>
@@ -90,7 +93,7 @@
   <article class="entry entry--novel-chrones">
     <p>Immortelle mais amnésique, Aëlya se réveille dans le Languedoc cathare de 1209, en pleine croisade albigeoise, sans souvenir de qui elle est. D'une époque encore inconnue à nos jours, elle a traversé les âges dans le sillage d'héroïnes oubliées de la résistance française : Velléda, Hildegarde de Bingen, Jeanne d'Arc, Catherine de Médicis, Olympe de Gouges.</p>
     <p>Face à elle, un Nephilim infiltré dans l'Église nourrit l'Inquisition pour écraser toute dissidence. Une question la poursuit d'époque en époque : utiliser le mal pour punir le mal, est-ce déjà devenir ce qu'on combat ?</p>
-    <p>Plusieurs tomes structurés, bibles narratives et de personnages étudiés, adaptation en jeu vidéo solo narratif prévu sous Unreal Engine 5 — Amarante : Le Réveil des Cendres (15-20h) — actuellement au stade Game Concept / GDD, développement du prototype prévu à partir de novembre 2026.</p>
+    <p>Plusieurs tomes structurés, bibles narratives et de personnages étudiées, adaptation en jeu vidéo solo narratif prévu sous Unreal Engine 5 — Amarante : Le Réveil des Cendres (15-20h) — actuellement au stade Game Concept / GDD, développement du prototype prévu à partir de novembre 2026.</p>
     <div class="entry-meta">
       <span class="tag">Inspiré de faits historiques</span>
       <span class="tag">Créatures folkloriques françaises</span>
@@ -99,7 +102,7 @@
   </article>
 
   <article class="entry entry--novel-chrones">
-    <p class="entry-accent">Mon travail</p>
+    <h2 class="entry-accent">Mon travail</h2>
     <p>Je construis cet univers de l'âge de Bronze à aujourd'hui : sa chronologie sur plusieurs siècles, ses personnages et créatures — Aëlya, immortelle amnésique, dans le sillage d'héroïnes réelles de la résistance française comme Velléda, Hildegarde de Bingen, Jeanne d'Arc, Catherine de Médicis, Olympe de Gouges, et son antagoniste, un Nephilim infiltré dans l'Église, immortel lui aussi. Plusieurs tomes structurés, avec bibles narratives, de personnages et de créatures issues du Folklore français achevées.</p>
     <div class="entry-meta">
       <span class="tag">Construction de l'univers</span>
@@ -118,7 +121,7 @@
   </article>
 
   <article class="entry entry--novel-chrones">
-    <p class="entry-accent">Lien avec Amarante</p>
+    <h2 class="entry-accent">Lien avec Amarante</h2>
     <p>Amarante : Le Réveil des Cendres est l'adaptation vidéoludique de cet univers. Le travail de worldbuilding et de narrative design mené ici — personnages, chronologie, bibles — constitue une partie du socle sur lequel s'appuie le Game Design du jeu : Immarcescible (univers, narration, personnages) nourrit directement Amarante (Game Design vidéoludique).</p>
   </article>
 
@@ -133,10 +136,11 @@
   </article>
 
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="wrap">
         <h2>Discutons</h2>
         <p class="lead">Une question, une proposition de collaboration, une envie d'en savoir plus sur un projet ? Écrivez-moi directement.</p>
@@ -160,6 +164,36 @@
   </div>
 </footer>
 
-<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<script>
+  // Les tableaux Pinterest ne sont charges qu'a la demande : le script tiers
+  // n'est injecte qu'au premier clic. Sans JavaScript, chaque bloc reste un
+  // lien direct vers le tableau.
+  (function () {
+    var zones = document.querySelectorAll('.moodboard-embed');
+    if (!zones.length) return;
+    var charge = false;
+
+    function chargerPinterest() {
+      if (charge) return;
+      charge = true;
+      Array.prototype.forEach.call(document.querySelectorAll('.moodboard-load'), function (b) {
+        b.remove();
+      });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://assets.pinterest.com/js/pinit.js';
+      document.body.appendChild(s);
+    }
+
+    Array.prototype.forEach.call(zones, function (zone) {
+      var bouton = document.createElement('button');
+      bouton.type = 'button';
+      bouton.className = 'moodboard-load';
+      bouton.textContent = 'Afficher le tableau Pinterest';
+      bouton.addEventListener('click', chargerPinterest);
+      zone.insertBefore(bouton, zone.firstChild);
+    });
+  })();
+</script>
 </body>
 </html>

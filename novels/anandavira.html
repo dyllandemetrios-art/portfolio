@@ -31,6 +31,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
 <header class="site-header">
   <div class="wrap">
     <div class="site-brand">
@@ -43,7 +45,7 @@
         <a href="../index.html#projets" aria-current="page">Projets</a>
         <div class="nav-dropdown">
           <a href="../index.html#jeux">Jeux</a>
-          <a href="../index.html#prototypes">Prototypes</a>
+          <a href="../index.html#prototypes">Prototypes et concepts</a>
           <a href="../index.html#ecriture">Side Quests</a>
         </div>
       </span>
@@ -70,6 +72,7 @@
   </div>
 </header>
 
+<main id="contenu" tabindex="-1">
 <div class="wrap back-link-wrap">
   <a class="back-link" href="../index.html#ecriture">← Retour à Side Quests</a>
 </div>
@@ -97,7 +100,7 @@
   </article>
 
   <article class="entry entry--novel-anandavira">
-    <p class="entry-accent">Mon travail</p>
+    <h2 class="entry-accent">Mon travail</h2>
     <p>Je construis Anandavīra de l’Atlantide au 23e siècle, comme un univers dont chaque couche tient debout seule : une cosmologie (les entités astrales Morgan et Abrahel, leur pacte trahi), des personnages que la réincarnation relie à travers les siècles — Aurora, Connor, Andrew, jusqu’à Kael et Ana dans l’Atlantide antique — et une question qui traverse les trois tomes : que vaut une liberté qu’on peut échanger contre un salut ?</p>
     <p>Tout est documenté. Une bible des personnages, une bible des vaisseaux (dix-huit appareils, avec leurs dimensions, tonnages et populations), une chronologie et un corpus de lore sur les technologies, les architectures et les civilisations. Des lieux précis : l’Ecliptica, vaisseau générationnel de trente kilomètres ; Agartha, cité souterraine ; l’anneau orbital de Taygeta Prime ; le réseau numérique CSM. Des peuples aux cultures distinctes : Nunnéens, Pléiadiens, Nordiques, Lyréens, Gris, Sasquatchs.</p>
     <div class="entry-meta">
@@ -118,7 +121,7 @@
   </article>
 
   <article class="entry entry--novel-anandavira">
-    <p class="entry-accent">Pilotage du projet d'adaptation</p>
+    <h2 class="entry-accent">Pilotage du projet d'adaptation</h2>
     <p>Au-delà de l’écriture, je conduis Anandavīra comme un projet d’adaptation en quatre phases.</p>
     <p><strong>Fondations écrites.</strong> Tomes 1 et 2 achevés, tome 3 entièrement structuré. Bible de personnages d’environ 170 pages, bible des vaisseaux et lore complets. Recherche d’un éditeur en cours pour le tome 1.</p>
     <p><strong>Direction artistique.</strong> Le document est rédigé et repose sur deux pôles : un monde sous contrôle, en teintes froides et sourdes, face à un monde en éveil, saturé et organique. C’est cette tension qui porte le récit à l’image.</p>
@@ -136,11 +139,11 @@
     <p class="entry-accent">Dossier de présentation</p>
     <h2>Le projet de série animée, en dix-neuf pages</h2>
     <p>L’œuvre et son univers, la note d’intention, les personnages et les sept peuples, le récit à travers les âges, la direction artistique en deux pôles, les décors clés, la flotte, et la trajectoire de production envisagée.</p>
+    <p class="pdf-direct"><a class="entry-link" href="../assets/anandavira-presentation-anime.pdf" target="_blank" rel="noopener">Télécharger le PDF →</a></p>
     <div class="pdf-embed">
       <iframe src="../assets/anandavira-presentation-anime.pdf#view=FitH" title="Anandavīra — dossier de présentation, document PDF de dix-neuf pages" loading="lazy"></iframe>
     </div>
     <p class="pdf-fallback">L’affichage intégré ne fonctionne pas sur tous les mobiles.</p>
-    <a class="entry-link" href="../assets/anandavira-presentation-anime.pdf" target="_blank" rel="noopener">Télécharger le PDF →</a>
   </article>
 
   <article class="entry entry--novel-anandavira">
@@ -210,17 +213,18 @@
   </article>
 
   <article class="entry entry--novel-anandavira">
-    <p class="entry-accent">Je cherche un concept artist</p>
+    <h2 class="entry-accent">Je cherche un concept artist</h2>
     <p>L’écrit et la direction artistique sont posés ; il manque l’image. Je cherche un concept artist ou un partenaire graphique pour donner corps aux personnages, aux vaisseaux, aux architectures et aux environnements, et constituer la bible graphique du dossier de série animée.</p>
     <p>Si le projet vous parle, écrivez-moi : je partage volontiers le dossier artistique complet et les bibles existantes.</p>
     <a class="entry-link" href="mailto:dyllandemetrios@gmail.com?subject=Anandav%C4%ABra%20%E2%80%94%20concept%20artist">Me contacter pour collaborer →</a>
   </article>
 
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="wrap">
         <h2>Discutons</h2>
         <p class="lead">Une question, une proposition de collaboration, une envie d'en savoir plus sur un projet ? Écrivez-moi directement.</p>
@@ -244,6 +248,36 @@
   </div>
 </footer>
 
-<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<script>
+  // Les tableaux Pinterest ne sont charges qu'a la demande : le script tiers
+  // n'est injecte qu'au premier clic. Sans JavaScript, chaque bloc reste un
+  // lien direct vers le tableau.
+  (function () {
+    var zones = document.querySelectorAll('.moodboard-embed');
+    if (!zones.length) return;
+    var charge = false;
+
+    function chargerPinterest() {
+      if (charge) return;
+      charge = true;
+      Array.prototype.forEach.call(document.querySelectorAll('.moodboard-load'), function (b) {
+        b.remove();
+      });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://assets.pinterest.com/js/pinit.js';
+      document.body.appendChild(s);
+    }
+
+    Array.prototype.forEach.call(zones, function (zone) {
+      var bouton = document.createElement('button');
+      bouton.type = 'button';
+      bouton.className = 'moodboard-load';
+      bouton.textContent = 'Afficher le tableau Pinterest';
+      bouton.addEventListener('click', chargerPinterest);
+      zone.insertBefore(bouton, zone.firstChild);
+    });
+  })();
+</script>
 </body>
 </html>

@@ -1095,3 +1095,114 @@ h3.entry-accent {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* ---------- appel a collaboration : panneaux replies ---------- */
+
+.collab-panels {
+  display: grid;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.collab-panel {
+  border: 1px solid var(--stone);
+  border-radius: 2px;
+  background: var(--ink-raised);
+}
+
+.collab-panel[open] {
+  border-color: var(--accent, var(--brass));
+}
+
+.collab-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 22px;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Le marqueur natif est remplace par le chevron. */
+.collab-summary::-webkit-details-marker { display: none; }
+.collab-summary::marker { content: ''; }
+
+.collab-summary:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+.collab-summary-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.collab-role {
+  font-size: 0.8rem;
+  color: var(--accent, var(--brass));
+}
+
+.collab-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--bone);
+}
+
+.collab-chevron {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid var(--bone-dim);
+  border-bottom: 1px solid var(--bone-dim);
+  transform: rotate(45deg);
+  transform-origin: center;
+  transition: transform 0.2s ease, border-color 0.15s ease;
+}
+
+.collab-panel[open] .collab-chevron {
+  transform: rotate(-135deg);
+  border-color: var(--accent, var(--brass));
+}
+
+.collab-summary:hover .collab-chevron,
+.collab-summary:hover .collab-title {
+  border-color: var(--accent, var(--brass));
+  color: var(--bone);
+}
+
+.collab-body {
+  padding: 0 22px 22px;
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+}
+
+.collab-body p {
+  color: var(--bone-dim);
+  max-width: 76ch;
+  margin: 0;
+}
+
+/* Les paragraphes du panneau sont espaces par la grille. */
+.entry .collab-body p + p { margin-top: 0; }
+
+.collab-note {
+  font-size: 0.86rem;
+  color: var(--bone-dim);
+  opacity: 0.85;
+  border-left: 1px solid var(--stone);
+  padding-left: 12px;
+}
+
+@media (max-width: 560px) {
+  .collab-summary { padding: 16px; gap: 12px; }
+  .collab-title { font-size: 1.1rem; }
+  .collab-body { padding: 0 16px 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collab-chevron { transition: none; }
+}

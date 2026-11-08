@@ -70,8 +70,8 @@
       <span class="nav-item">
         <a href="index.html#projets">Projets</a>
         <div class="nav-dropdown">
-          <a href="index.html#jeux">Jeux</a>
           <a href="index.html#prototypes">Prototypes et concepts</a>
+          <a href="index.html#projets-de-formation">Projets de formation</a>
           <a href="index.html#ecriture">Side Quests</a>
         </div>
       </span>
@@ -109,11 +109,58 @@
 
 <section class="wrap" id="projets">
 
-  <div class="project-category" id="jeux">
-    <h2>Jeux</h2>
-    <p class="section-lead">Des projets menés jusqu’au bout : une boucle de jeu complète, une condition de victoire ou d’échec, et une version publiée que n’importe qui peut lancer.</p>
-    <p class="section-lead-tags">Game Design · Gameplay Programming · Systems Design · Narrative Design</p>
+  <div class="project-category" id="prototypes">
+    <h2>Prototypes et concepts</h2>
+    <p class="section-lead">Des projets où j’isole une question de design ou de technique pour y répondre : une mécanique à éprouver, un moteur à apprendre, un concept à documenter avant de le produire.</p>
+    <p class="section-lead-tags">Game Design · Prototyping · Gameplay Programming · Systems Design</p>
     <div class="project-grid">
+
+      <div class="project-item project-item--game">
+        <a class="project-card" href="concept-chrones.html" tabindex="-1" aria-hidden="true">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/chrones.jpg')"></div>
+          <span class="project-card-badge">Game Design</span>
+        </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Unreal Engine 5 — RPG narratif</p>
+          <h3><a href="concept-chrones.html">Amarante : Le Réveil des Cendres</a></h3>
+          <p class="project-card-status">Concept documenté — sans prototype</p>
+          <p class="project-card-desc">RPG d'action-exploration historique où la mémoire devient une mécanique de progression.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Game Design</span>
+            <span class="tag tag--role">Narrative Design</span>
+            <span class="tag tag--role">Worldbuilding</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Unreal Engine 5</span>
+            <span class="tag">Projet de formation en cours</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-item project-item--game">
+        <a class="project-card" href="games/last-call-crew.html" tabindex="-1" aria-hidden="true">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/last-call-crew-card.jpg')"></div>
+          <span class="project-card-badge">Game Design</span>
+        </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Unity 6 — coop comique multijoueur</p>
+          <h3><a href="games/last-call-crew.html">Last Call Crew</a></h3>
+          <p class="project-card-status">Prototype multijoueur — playtest interne</p>
+          <p class="project-card-desc">En douze minutes, une bande d’amis enchaîne les missions, gère l’ivresse et tente de rentrer au complet avant l’aube.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Game Design</span>
+            <span class="tag tag--role">Technical Game Design</span>
+            <span class="tag tag--role">Systems Design</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Unity 6</span>
+            <span class="tag">C#</span>
+            <span class="tag">Netcode for GameObjects</span>
+          </div>
+        </div>
+      </div>
 
       <div class="project-item project-item--game">
         <a class="project-card" href="games/an-astral-story-ashar.html" tabindex="-1" aria-hidden="true">
@@ -138,6 +185,37 @@
           </div>
         </div>
       </div>
+
+      <div class="project-item project-item--game">
+        <a class="project-card" href="games/francia-souls-like.html" tabindex="-1" aria-hidden="true">
+          <div class="project-card-media" style="--card-image:url('assets/images/projects/francia-souls-like.jpg')"></div>
+          <span class="project-card-badge">Gameplay Programming</span>
+        </a>
+        <div class="project-card-body">
+          <p class="project-card-kicker">Unreal Engine 5 — prototype de combat</p>
+          <h3><a href="games/francia-souls-like.html">Francia Souls-Like</a></h3>
+          <p class="project-card-status">Prototype jouable — démo Windows</p>
+          <p class="project-card-desc">Un combat de boss à la troisième personne : combo, endurance, esquive et un boss en trois phases.</p>
+          <p class="project-card-role">Rôles</p>
+          <div class="entry-meta">
+            <span class="tag tag--role">Gameplay Programming</span>
+          </div>
+          <div class="entry-meta">
+            <span class="tag">Unreal Engine 5</span>
+            <span class="tag">Blueprints</span>
+            <span class="tag">Jouable</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="project-category" id="projets-de-formation">
+    <h2>Projets de formation</h2>
+    <p class="section-lead">Des projets menés jusqu’au bout : une boucle de jeu complète, une condition de victoire ou d’échec, et une version publiée que n’importe qui peut lancer.</p>
+    <p class="section-lead-tags">Game Design · Gameplay Programming · Systems Design · Narrative Design</p>
+    <div class="project-grid">
 
       <div class="project-item project-item--game">
         <a class="project-card" href="games/robot-clean.html" tabindex="-1" aria-hidden="true">
@@ -206,84 +284,6 @@
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
             <span class="tag">Projet de formation</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="project-category" id="prototypes">
-    <h2>Prototypes et concepts</h2>
-    <p class="section-lead">Des projets où j’isole une question de design ou de technique pour y répondre : une mécanique à éprouver, un moteur à apprendre, un concept à documenter avant de le produire.</p>
-    <p class="section-lead-tags">Game Design · Prototyping · Gameplay Programming · Systems Design</p>
-    <div class="project-grid">
-
-      <div class="project-item project-item--game">
-        <a class="project-card" href="concept-chrones.html" tabindex="-1" aria-hidden="true">
-          <div class="project-card-media" style="--card-image:url('assets/images/projects/chrones.jpg')"></div>
-          <span class="project-card-badge">Game Design</span>
-        </a>
-        <div class="project-card-body">
-          <p class="project-card-kicker">Unreal Engine 5 — RPG narratif</p>
-          <h3><a href="concept-chrones.html">Amarante : Le Réveil des Cendres</a></h3>
-          <p class="project-card-status">Concept documenté — sans prototype</p>
-          <p class="project-card-desc">RPG d'action-exploration historique où la mémoire devient une mécanique de progression.</p>
-          <p class="project-card-role">Rôles</p>
-          <div class="entry-meta">
-            <span class="tag tag--role">Game Design</span>
-            <span class="tag tag--role">Narrative Design</span>
-            <span class="tag tag--role">Worldbuilding</span>
-          </div>
-          <div class="entry-meta">
-            <span class="tag">Unreal Engine 5</span>
-            <span class="tag">Projet de formation en cours</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-item project-item--game">
-        <a class="project-card" href="games/last-call-crew.html" tabindex="-1" aria-hidden="true">
-          <div class="project-card-media" style="--card-image:url('assets/images/projects/last-call-crew-card.jpg')"></div>
-          <span class="project-card-badge">Game Design</span>
-        </a>
-        <div class="project-card-body">
-          <p class="project-card-kicker">Unity 6 — coop comique multijoueur</p>
-          <h3><a href="games/last-call-crew.html">Last Call Crew</a></h3>
-          <p class="project-card-status">Prototype multijoueur — playtest interne</p>
-          <p class="project-card-desc">En douze minutes, une bande d’amis enchaîne les missions, gère l’ivresse et tente de rentrer au complet avant l’aube.</p>
-          <p class="project-card-role">Rôles</p>
-          <div class="entry-meta">
-            <span class="tag tag--role">Game Design</span>
-            <span class="tag tag--role">Technical Game Design</span>
-            <span class="tag tag--role">Systems Design</span>
-          </div>
-          <div class="entry-meta">
-            <span class="tag">Unity 6</span>
-            <span class="tag">C#</span>
-            <span class="tag">Netcode for GameObjects</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-item project-item--game">
-        <a class="project-card" href="games/francia-souls-like.html" tabindex="-1" aria-hidden="true">
-          <div class="project-card-media" style="--card-image:url('assets/images/projects/francia-souls-like.jpg')"></div>
-          <span class="project-card-badge">Gameplay Programming</span>
-        </a>
-        <div class="project-card-body">
-          <p class="project-card-kicker">Unreal Engine 5 — prototype de combat</p>
-          <h3><a href="games/francia-souls-like.html">Francia Souls-Like</a></h3>
-          <p class="project-card-status">Prototype jouable — démo Windows</p>
-          <p class="project-card-desc">Un combat de boss à la troisième personne : combo, endurance, esquive et un boss en trois phases.</p>
-          <p class="project-card-role">Rôles</p>
-          <div class="entry-meta">
-            <span class="tag tag--role">Gameplay Programming</span>
-          </div>
-          <div class="entry-meta">
-            <span class="tag">Unreal Engine 5</span>
-            <span class="tag">Blueprints</span>
-            <span class="tag">Jouable</span>
           </div>
         </div>
       </div>

@@ -19,6 +19,7 @@ games/an-astral-story-ashar.html  fiche projet — shoot’em up narratif Unity 
 games/robot-clean.html       fiche projet — infinite runner Unity
 games/eden-snake.html        fiche projet — arcade narratif Unity
 games/solarpunk-sky-garden.html  fiche projet — gestion & simulation Unity
+games/last-call-crew.html    fiche projet — coop comique multijoueur Unity 6
 games/francia-souls-like.html    fiche projet — prototype de combat UE5
 boardgames/francia.html      Francia — jeu de plateau coopératif
 novels/immarcescible.html    dark fantasy
